@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/Pages/Doctors/doctor.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+
+</head>
+<body>
+       <!-- Navbar -->
+       <nav class=" navbar navbar-expand-lg nav-body bg-white sticky-top shadow-sm" >
+        <div class="fw-semibold fs-4 ms-4">Hospital</div>
+        <div class="logo">
+           <img src="/Icons/heart-attack.png" alt="">
+        </div>
+       <div class="collapse navbar-collapse " id="navbarNav">
+           <ul class="navbar-nav ml-auto fw-semibold navbar-link">
+               <li class="nav-item ">
+                   <a class="nav-link fs-5 ms-4 nav-text mt-2" href="/Html/index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Services/service.html">Services</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Doctors/doctor.html">Doctors</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Contact/contact.html">Contact Us</a>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle ms-4 mt-2 fs-5 nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Treatement
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Cardiologist</a></li> 
+                     <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Neurologist</a></li>
+                     <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Orthopedist</a></li>
+                   </ul>
+                 </li>
+               <li class="nav-item mb-2">
+                   <!-- <a class="nav-link fs-5 nav-text" href="#Booking"><button class="btn book-btn btn-sm fw-semibold ms-4">Book Now</button></a> -->
+               </li>
+           </ul>
+       </div>
+   </nav>
+
+   <!-- Carousel -->
+   <div id="carouselExampleCaptions" class="carousel slide " >
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       </div>
+       <div class="carousel-inner position-relative">
+         <div class="carousel-item active ">
+           <div class="banner-img-1">
+           <img src="/Pictures/bg-1.png" class="d-block w-100" alt="..."></div>
+           <div class="carousel-caption d-none d-md-block text-black banner-text ">
+             <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+             <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <div class="banner-img">
+           <img src="/Pictures/bg-2.png" class="d-block w-100" alt="..."></div>
+           <div class="carousel-caption d-none d-md-block text-black banner-text ">
+             <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+             <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <div class="banner-img">
+           <img src="/Pictures/image-03.png" class="d-block w-100" alt="..."></div>
+           <div class="carousel-caption d-none d-md-block text-black banner-text">
+             <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+             <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+           </div>
+         </div>
+       </div>
+       <button class="carousel-control-prev carousel-btn-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next carousel-btn-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+         <span class="carousel-control-next-icon  carousel-btn-span" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div>
+     <!-- heading section  -->
+     <section class="container heading-sec ">
+        <div class="text-center fw-medium fs-5">Our Doctors</div>
+        <div class="text-center fw-bolder fs-1 ">MEET OURS AMAZING DOCTORS</div>
+     </section>
+     <!-- grp picture  -->
+      <section class="container">
+        <div class="grp-img ">
+            <img  src="/Pictures/group-of-doctors-standing-in-hospital-on-medical-c-PXG2Z2J.jpg" alt="">
+        </div>
+      </section>
+      <!-- doctors img and there details  -->
+       <!-- doc-1  -->
+        <section class="container doc-1-whole shadow-sm">
+            <div class="row">
+                <div class="col">
+                    <div class="doc-1-img">
+                        <img src="/Pictures/portrait-of-happy-doctor-at-hospital-corridor2-CX3VSGM.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 doc-1-whole-text">
+                    
+                    <h3 class="fw-semibold ">Dr. John Smith</h3>
+                    <div class="fw-semibold mt-2 mb-3">After graduating from West Virginia University Medical School, Dr. Emily Haden completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Emily Haden Alex was team physician for the University of Akron and Walsh University.</div>
+                    <div class="mt-2">
+                        <strong class="fs-5">Specialty :</strong>
+                    <span class="fw-semibold"> Cardiology</span></div>
+                    <div class="mt-2">
+                        <strong class="fs-5 ">Qualification :</strong>
+                    <span class="fw-semibold"> MBBS, MD (Cardiology)</span></div>
+                    <div class="mt-2">
+                        <strong class="fs-5 ">Experience :</strong>
+                    <span class="fw-semibold">15 Years</span></div>
+                    <div class="mt-2">
+                        <strong class="fs-5 ">Description :</strong>
+                    <span class="fw-semibold">Dr. John Smith is a leading cardiologist with over 15 years of experience in diagnosing
+                         and treating cardiovascular diseases. He is known for his compassionate approach and dedication to patient education.
+                         Dr. Smith has published several research papers in reputed journals and is actively 
+                         involved in community outreach programs promoting heart health. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente officiis voluptatem id cumque et neque dolore, deserunt ratione saepe natus?</span></div>
+                </div>
+
+            </div>
+        </section>
+     <!-- doc-2  -->
+      <section class="container doc-1-whole shadow-sm bg-light">
+        <div class="row">
+            <div class="col doc-2-whole-text ">
+                
+                <h3 class="fw-semibold ">Dr. Emily Davis</h3>
+                <div class="fw-semibold mt-2 mb-3">After graduating from West Virginia University Medical School, Dr. Emily Haden completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Emily Haden Alex was team physician for the University of Akron and Walsh University.</div>
+                <div class="mt-2">
+                    <strong class="fs-5">Specialty :</strong>
+                <span class="fw-semibold">  Pediatrics</span></div>
+                <div class="mt-2">
+                    <strong class="fs-5 ">Qualification :</strong>
+                <span class="fw-semibold"> MBBS, MD (Pediatrics)</span></div>
+                <div class="mt-2">
+                    <strong class="fs-5 ">Experience :</strong>
+                <span class="fw-semibold">10 Years</span></div>
+                <div class="mt-2">
+                    <strong class="fs-5 ">Description :</strong>
+                <span class="fw-semibold">Dr. Emily Davis is a compassionate pediatrician with a decade of experience in child healthcare. She specializes in providing comprehensive care for infants, children, and adolescents. Dr. Davis believes in a family-centered approach, working closely with parents to ensure the well-being of their children. She is also an advocate for childhood immunizations and preventive care.</span></div>
+            </div>
+            <div class="col">
+                <div class="doc-2-img">
+                    <img src="/Pictures/portrait-of-young-woman-doctor-with-rescuers-in-ba2-FLP5ZUQ.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- doc-3  -->
+      <section class="container doc-3-whole shadow-sm">
+        <div class="row">
+            <div class="col">
+                <div class="doc-3-img">
+                    <img src="/Pictures/doctor.jpg" alt="">
+                </div>
+            </div>
+            <div class="col doc-1-whole-text">
+                
+                <h3 class="fw-semibold ">Dr. Michael Brown</h3>
+                <div class="fw-semibold mt-2 mb-3">After graduating from West Virginia University Medical School, Dr. Emily Haden completed a two-year fellowship in sports medicine at Akron Children’s Hospital. During his training at Akron, Dr. Emily Haden Alex was team physician for the University of Akron and Walsh University.</div>
+                <div class="mt-2">
+                    <strong class="fs-5">Specialty :</strong>
+                <span class="fw-semibold"> Orthopedics</span></div>
+                <div class="mt-2">
+                    <strong class="fs-5 ">Qualification :</strong>
+                <span class="fw-semibold"> MBBS, MS (Orthopedics)</span></div>
+                <div class="mt-2">
+                    <strong class="fs-5 ">Experience :</strong>
+                <span class="fw-semibold">12 Years</span></div>
+                <div class="mt-2">
+                    <strong class="fs-5 ">Description :</strong>
+                <span class="fw-semibold">Dr. Michael Brown is an expert orthopedic surgeon with a focus on joint replacement and sports injuries. With 12 years of experience, Dr. Brown has successfully performed numerous surgeries and is renowned for his meticulous surgical skills and patient care. He is committed to helping patients regain mobility and improve their quality of life.</span></div>
+            </div>
+
+        </div>
+    </section>
+        <!-- doctors-card-section  -->
+    <section class="container doc-card-body">
+        <div class="row ms-3">
+            <!-- card-1  -->
+            <div class="col-6">
+                <div class="card box-1-card d-flex flex-row shadow-sm">
+                    <img class="card-img-left " src="/Pictures/doc-4.jpg" alt="">
+                    <div class="card-body text-color fw-semibold">
+                        <div class="card-title fw-bold fs-5">Dr. Benjamin Clark</div>
+                        <p class="card-text mb-1">Specialties : General Surgeon</p>
+                        <div class="phone d-flex">
+                            <img src="/Icons/maps-and-flags.png" alt="">
+                        <p class="me-3">Nova Hospital</p>
+                        <img src="/Icons/phone.png" alt="">
+                           <p>310-432-1532</p>
+                        </div>
+                        <div class="card-1-btn d-flex flex-row">
+                        <button class="btn btn-primary fw-medium placeholder-wave">Schedule Appointment</button>
+                        <button class="ms-2 btn btn-outline-primary text-color fw-semibold border border-none placeholder-wave">View profile</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+           <!-- card-2  -->
+                <div class="col-6">
+                    <div class="card box-1-card d-flex flex-row shadow-sm ms-4">
+                        <img class="card-img-left " src="/Pictures/doc-5.jpg" alt="">
+                        <div class="card-body text-color fw-semibold">
+                            <div class="card-title fw-bold fs-5">Dr. Benjamin Clark</div>
+                            <p class="card-text mb-1">Specialties : General Surgeon</p>
+                            <div class="phone d-flex">
+                                <img src="/Icons/maps-and-flags.png" alt="">
+                            <p class="me-3">Nova Hospital</p>
+                            <img src="/Icons/phone.png" alt="">
+                               <p>310-432-1532</p>
+                            </div>
+                            <div class="card-1-btn d-flex flex-row">
+                            <button class="btn btn-primary fw-medium border border-none placeholder-wave">Schedule Appointment</button>
+                            <button class="ms-2 btn btn-outline-primary text-color fw-semibold border border-none placeholder-wave">View profile</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3  -->
+                <div class="col-6 mt-4 ">
+                    <div class="card box-1-card d-flex flex-row shadow-sm mt-2">
+                        <img class="card-img-left " src="/Pictures/doc-2.jpg" alt="">
+                        <div class="card-body text-color fw-semibold">
+                            <div class="card-title fw-bold fs-5">Dr. Benjamin Clark</div>
+                            <p class="card-text mb-1" >Specialties : General Surgeon</p>
+                            <div class="phone d-flex">
+                                <img src="/Icons/maps-and-flags.png" alt="">
+                            <p class="me-3">Nova Hospital</p>
+                            <img src="/Icons/phone.png" alt="">
+                               <p>310-432-1532</p>
+                            </div>
+                            <div class="card-1-btn d-flex flex-row">
+                            <button class="btn btn-primary fw-medium placeholder-wave">Schedule Appointment</button>
+                            <button class="ms-2 btn btn-outline-primary text-color fw-semibold border border-none placeholder-wave">View profile</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="col-6 mt-4 ">
+                    <div class="card box-1-card d-flex flex-row shadow-sm ms-4 mt-2">
+                        <img class="card-img-left " src="/Pictures/doc-3.jpg" alt="">
+                        <div class="card-body text-color fw-semibold">
+                            <div class="card-title fw-bold fs-5">Dr. Benjamin Clark</div>
+                            <p class="card-text mb-1">Specialties : General Surgeon</p>
+                            <div class="phone d-flex">
+                                <img src="/Icons/maps-and-flags.png" alt="">
+                            <p class="me-3">Nova Hospital</p>
+                            <img src="/Icons/phone.png" alt="">
+                               <p>310-432-1532</p>
+                            </div>
+                            <div class="card-1-btn d-flex flex-row ">
+                            <button class="btn btn-primary fw-medium placeholder-wave">Schedule Appointment</button>
+                            <button class="ms-2 btn btn-outline-primary text-color fw-semibold border border-none placeholder-wave">View profile</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+     
+          <!-- footer  -->
+          <footer class=" container-fluid foot-body pt-5 pb-4 ">
+            <div class="row">
+                <div class="col-md-3  mx-auto mt-3">
+                  
+                       
+                        <h5 class="text-uppercase mb-4 fw-bold "> <i class="mdi mdi-plus-outline fs-4"></i> Hospital Name</h5>
+                    <p class="para-box">
+                        Our hospital provides world-class healthcare services with a team of highly skilled doctors and medical professionals. We are committed to improving the health and well-being of our community.
+                    </p>
+                </div>
+
+                <div class="col-md-2  mt-3 foot-para-a">
+                    <h5 class="text-uppercase mb-4 fw-bold">Quick Links</h5>
+                    <p class="">
+                        <a class="para-box" href="">Home</a>
+                    </p>
+                    <p>
+                        <a class="para-box" href="#">About Us</a>
+                    </p>
+                    <p>
+                        <a class="para-box" href="#">Services</a>
+                    </p>
+                    <p>
+                        <a class="para-box" href="#">Contact Us</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3  mx-auto mt-3 foot-para-a ">
+                    <h5 class="text-uppercase mb-4 fw-bold">Contact</h5>
+                    <p class="para-box">
+                        <i class="mdi mdi-hospital fs-5"></i>
+                      1234 Main Street, jabalpur, 
+                    </p>
+                    <p class="para-box">
+                        <i class="mdi mdi-map-marker fs-5"></i>
+                       info@hospital.com
+                    </p>
+                 
+                   
+                    <p class="para-box ">
+                        <i class="mdi mdi-phone-in-talk fs-5"></i>
+                       +1 234 567 890
+                    </p>
+              
+                    <p class="para-box">
+                        <i class="mdi mdi-phone-in-talk fs-5 "></i>
+                    +1 234 567 890
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 ">
+                    <p class="text-center para-box">© 2024 Hospital Name. All rights reserved.</p>
+                </div>
+
+                <div class="col-md-5">
+                    <p class="text-center para-box">Hospital <a href="#" class="text-black"><strong class="text-color">Website</strong></a></p>
+                </div>
+            </div>  
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

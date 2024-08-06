@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class=" navbar navbar-expand-lg nav-body bg-white sticky-top shadow-sm" >
+         <div class="fw-semibold fs-4 ms-4">Hospital</div>
+         <div class="logo">
+            <img src="/Icons/heart-attack.png" alt="">
+         </div>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto fw-semibold navbar-link">
+                <li class="nav-item ">
+                    <a class="nav-link fs-5 ms-4 nav-text mt-2"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Services/service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Doctors/doctor.html">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Contact/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-4 mt-2 fs-5 nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Treatement
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Cardiologist</a></li> 
+                      <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Neurologist</a></li>
+                      <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Orthopedist</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item mb-2">
+                    <!-- <a class="nav-link fs-5 nav-text" href="#Booking"><button class="btn book-btn btn-sm fw-semibold ms-4">Book Now</button></a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide " >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner position-relative">
+          <div class="carousel-item active ">
+            <div class="banner-img-1">
+            <img src="/Pictures/bg-1.png" class="d-block w-100" alt="..."></div>
+            <div class="carousel-caption d-none d-md-block text-black banner-text ">
+              <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+              <p class="fs-4 fw-medium text-color text-start"> Our medical specialists care about you & your family's health.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-img">
+            <img src="/Pictures/bg-2.png" class="d-block w-100" alt="..."></div>
+            <div class="carousel-caption d-none d-md-block text-black banner-text ">
+              <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+              <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-img">
+            <img src="/Pictures/image-03.png" class="d-block w-100" alt="..."></div>
+            <div class="carousel-caption d-none d-md-block text-black banner-text">
+              <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+              <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev carousel-btn-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next carousel-btn-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon  carousel-btn-span" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Home Section -->
+    <section class="container mt-5 text-center">
+        <h2 class="fw-semibold">Welcome to Our Hospital</h2>
+        <p class="fs-5 fw-medium">Providing quality healthcare services for over 20 years.</p>
+    </section>
+    
+
+   
+     <!-- card-1left-text nd right-img  -->
+    <section>
+        <div class="container card-1">
+            <div class="row">
+                <div class="col">
+                    <div class="text-box">
+                        <!-- <h3>Lorem ipsum dolor sit.</h3> -->
+                         <h2 class="fs-1">Clinic with Innovative Approach to Treatment</h2>
+                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda cumque similique odit illum unde! Corrupti voluptates culpa provident laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laborum? Minima aperiam repellendus cum, mollitia ea harum vel inventore corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laborum!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img-box">
+                        <img src="/Pictures/image-04.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- box 2 section -->
+     <section class="container box-2-body">
+        <div class="row">
+            <div class="col-6">
+                <div class="box-2-img ">
+                    <img src="/Pictures/chief_doctor_700x800.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="box-2-text ">
+                    <h2 class="fs-1">Our Commitment to Exceptional Hospitality</h2>
+                     <p class="">We believe that exceptional medical care goes hand in hand with outstanding hospitality. Our dedicated team of healthcare professionals is committed to providing a warm, welcoming, and compassionate environment for all our patients and their families. From the moment you walk through our doors, you will be greeted with a friendly smile and treated with the utmost respect and dignity. We understand that a hospital visit can be a challenging experience, and we strive to make your stay as comfortable and stress-free as possible. Our state-of-the-art facilities, combined with personalized care and attention, ensure that you receive the best.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+<!-- box-3 section  -->
+     <section class="container box-3-body">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="box-3-text ">
+                    <h2 class="text-color fw-semibold fs-1 ">Unparalleled Patient Care and Comfort</h2>
+                    <p class="text-color  mt-4"> we prioritize your comfort and peace of mind. Our dedicated team ensures a welcoming  is our top priority, and we are here to support you every step of the way.</p>
+                    <p class="text-color ">Our modern facilities are designed with your comfort in mind, featuring spacious rooms that you receive the highest quality care in a compassionate setting.</p>
+                    <button type="button" class="btn book-btn text-color fw-semibold fs-5 mt-3">We Are Here</button>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="box-3-img">
+                    <img src="/Pictures/image-02.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="doctors" class="container doc-body">
+        <h2>Meet Our Doctors</h2>
+        <div class="row doc-row mt-4">
+            <div class="col-md-2  doc-card-div">
+                <div class="card doc-card shadow-sm" >
+                    <div class="doc-img">
+                    <img src="/Pictures/doc-5.jpg" class="card-img-top" alt=""></div>
+                    <div class="card-body text-center ">
+                        <h5 class="card-title text-color fw-semibold">Dr. John Doe</h5>
+                        <p class="card-text fw-medium text-color fw-semibold">Cardiologist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 doc-card-div ">
+                <div class="card  doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/doc-4.jpg" class="card-img-top" alt=""></div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-color fw-semibold">Dr. Jane Smith</h5>
+                        <p class="card-text text-color fw-semibold">Neurologist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 doc-card-div">
+                <div class="card  doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/veronica-400x400.jpg" class="card-img-top" alt="Doctor 3"></div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-color fw-semibold">Dr. Emily Brown</h5>
+                        <p class="card-text fw-medium text-color fw-semibold">Pulmonary</p>
+                    </div>
+                </div>
+            </div>
+            <!-- doctor pic and info  -->
+            <div class="col-md-2 doc-card-div">
+                <div class="card doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/doc-3.jpg" class="card-img-top" alt="Doctor 3"></div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-color fw-semibold">Dr. Br Danial</h5>
+                        <p class="card-text fw-medium text-color fw-semibold">Orthopedist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- doctor box-5  -->
+    <section class="container docinfo-body">
+        <div class="row doc-rows">
+            <div class="col-md-6">
+                <div class="doc-img-1">
+                    <img src="/Pictures/image-08.png" alt="">
+                </div>
+            </div>
+                <div class="col-md-6">
+                <div class="doc-text-1">
+                    <h2>Dr. Emily Johnson - Cardiology</h2>
+                    <p class="fw-semibold ">Dr. Emily Johnson is a highly skilled cardiologist with over 15 years of experience in diagnosing and treating heart conditions. She specializes in advanced cardiac care, including interventional cardiology and preventive cardiology, ensuring patients receive comprehensive heart health management Lorem ipsum  eum laboriosam nam reprehenderit.sint?.</p>
+                    <p>
+                        <button class="btn mb-0 fw-semibold text-color" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample-1" aria-expanded="false" aria-controls="collapseWidthExample">
+                          Read More
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample-1">
+                          <div class="card card-body fw-semibold text-color shadow-sm" style="width: 30rem;background: whitesmoke;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo consectetur culpa quas, voluptate ipsa eveniet deleniti tenetur eos iure quibusdam vel fugit quisquam, commodi non.
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="row mt-5 doc-rows">
+            <div class="col-md-6">
+                <div class="doc-text-2">
+                    <h2>Dr. David Lee - Neurology</h2>
+                    <p class="fw-semibold mb-0">Dr. David Lee is an experienced neurologist who specializes in diagnosing and treating disorders of the nervous system. His expertise includes managing conditions such as epilepsy, multiple sclerosis, and migraines, with a focus on improving patients' quality of life..</p>
+                    <p>
+                        <button class="btn text-color fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample-2" aria-expanded="false" aria-controls="collapseWidthExample">
+                          Read More
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample-2">
+                          <div class="card card-body fw-semibold text-color shadow-sm" style="width: 30rem;background: whitesmoke;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaeratvoluptate ipsa eveniet deleniti tenetur eos iure quibusdam vel fugit quisquam, commodi non.
+                          </div>
+                        </div>
+                      </div>
+                </div>
+             
+            </div>
+                <div class="col-md-6">
+                    <div class="doc-img-2">
+                        <img src="/Pictures/image-09.png" alt="">
+                    </div>
+            </div>
+        </div>
+        <div class="row doc-rows mt-5">
+            <div class="col-md-6">
+                <div class="doc-img-3">
+                    <img src="/Pictures/bg-1.png" alt="">
+                </div>
+            </div>
+                <div class="col-md-6">
+                <div class="doc-text-3">
+                    <h2>Dr. Michael Brown - Pediatrics</h2>
+                    <p class="fw-semibold mb-0" >Dr. Michael Brown is a compassionate pediatrician dedicated to the health and well-being of children. With a focus on preventive care and childhood development, he provides expert medical advice and treatment for children from infancy through adolescence.</p>
+                    <p >
+                        <button class="btn  text-color fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample-3" aria-expanded="false" aria-controls="collapseWidthExample">
+                          Read More
+                        </button>
+                      </p>
+                      <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample-3">
+                          <div class="card card-body fw-semibold text-color shadow-sm " style="width: 30rem; background: whitesmoke;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo consectetur culpa quas, voluptate ipsa eveniet deleniti tenetur eos iure quibusdam vel fugit quisquam, commodi non.
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+     <!-- box-4 section  -->
+     <section class="container box-4">
+        <div class="row ">
+            <div class="col-md- box-4-text-body">
+                <div class="box-4-text">
+                    <h2 class="mt-4 text-center fw-semibold">Opening Hours:</h2>
+                    <hr class="line-text ">
+                    <table class=" fw-semibold fs-4 table-data ">
+                        <tbody class="">
+                            <tr class="">
+                                <td>Mon-Web </td>
+                                <td class="ps-4"> - </td>
+                                <td class="ps-4"> 9:00 AM - 7:00 PM </td>
+                            </tr>
+                            <tr>
+                                <td>Thursday </td>
+                                <td class="ps-4"> - </td>
+                                <td class="ps-4"> 9:00 AM - 7:00 PM </td>
+                            </tr>
+                            <tr>
+                                <td>Friday </td>
+                                <td class="ps-4"> - </td>
+                                <td class="ps-4"> 9:00 AM - 7:00 PM </td>
+                            </tr>
+                            <tr>
+                                <td>Sat-Sun</td>
+                                <td class="ps-4"> - </td>
+                                <td class="ps-4 text-danger">Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="another-text text-left mt-4 ms-2 ">
+                        <h5 class="fw-semibold ">How You Reach?</h5>
+                        <div class="phone-img">
+                            <img src="/Icons/phone.png" alt="">
+                            <span class="fw-semibold text-primary">+91 48 03 23 597</span>
+                        </div>
+                        <div class="map-img mt-3">
+                            <img src="/Icons/maps-and-flags.png" alt="">
+                            <span class="fw-semibold ">289 vijay nagar jabalpur (M.P)</span>
+                        </div>
+                        
+                        <p class="fw-semibold mt-2 ms-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit! Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- <div class="img-box-4">
+                  
+                    <div class="img-box-4-img"> <img src="/Pictures/Our-Profesional-Doctor-280x215.jpg" alt=""></div>
+                </div> -->
+                <div class="img-box-4">
+                    <img src="/Pictures/image-05.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+         <!-- Doctors Section -->
+ 
+     <!-- Contact Us Section -->
+    <!-- <section id="contact" class="container contact-body mt-5 py-5 ">
+        <h2 class="">Contact Us</h2>
+        <div class="contact-whole-body mt-4">
+        <div class="row">
+            <div class="col-md-7">
+        <form>
+            <div class="form-group">
+                <label class="fw-semibold ">Name</label>
+                <input type="text" class="form-control mt-2 input-field " placeholder="Enter your name">
+            </div>
+            <div class="form-group mt-4">
+                <label class="fw-semibold">Email</label>
+                <input type="text" class="form-control input-field mt-2"  placeholder="Enter your email">
+            </div>
+            <div class="form-group mt-4">
+                <label class="fw-semibold">Password</label>
+                <input type="text" class="form-control input-field mt-2"  placeholder="Enter your Password">
+            </div>
+            <div class="form-group mt-4">
+                <label  class="fw-semibold">Phone Number</label>
+                <input type="text" class="form-control input-field mt-2"  placeholder="Enter your Number">
+            </div>
+            <button type="submit" class="btn btn-info mt-4 fw-semibold text-black">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="info-img">
+            <img src="/Pictures/doc-1.jpg" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+    </section> -->
+    <!-- Services Section -->  
+        <!-- <div class="row doc-row mt-4">
+            <div class="col-md-2 doc-card-div">
+                <div class="card doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/Facility-Optic-280x215.jpg" class="card-img-top" alt="Service 1"></div>
+                    <div class="card-body" >
+                        <h5 class="card-title text-color text-center fw-semibold">Eye Care</h5>
+                        <p class="card-text text-color text-center fw-semibold">Well we're movin' on up, Lorem ipsum to the east side...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 doc-card-div">
+                <div class="card doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/Depositphotos_11882261_original-280x215.jpg" class="card-img-top" alt="Service 2"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-color text-center fw-semibold">Pediatrician Clinic</h5>
+                        <p class="card-text text-color text-center fw-semibold">reating childs is kinda good thing Lorem ipsum dolor sit....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 doc-card-div">
+                <div class="card doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/Rehabilitation-280x215.jpg" class="card-img-top" alt="Service 3"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-color text-center fw-semibold">Nephrologist Care</h5>
+                        <p class="card-text text-color text-center fw-semibold">Lorem ipsum dolor sit amet Lorem, ipsum dolor....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 doc-card-div">
+                <div class="card doc-card shadow-sm">
+                    <div class="doc-img">
+                    <img src="/Pictures/Nephrologist-Care-280x215.jpg" class="card-img-top" alt="Service 3"></div>
+                    <div class="card-body">
+                        <h5 class="card-title text-color text-center fw-semibold">Orthopedics</h5>
+                        <p class="card-text text-color text-center fw-semibold ">Comprehensive orthopedic Lorem, ipsum dolor. care...</p>
+                    </div>
+                </div>
+            </div> -->
+       
+            <!-- <div class="row">
+                <div class="col">
+                    <div class="serve-img">
+                        <img src="/Pictures/image-12 (1).png" alt="">
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div> -->
+           
+        <!-- </section> -->
+        <section>
+            <div class="container card-2">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-box">
+                            <!-- <h3>Lorem ipsum dolor sit.</h3> -->
+                             <h2 class="fs-1">Comprehensive Healthcare Services</h2>
+                             <p class="mt-4">we are dedicated to providing top-quality healthcare services to our community. Our team of experienced and compassionate medical professionals offers a wide range of services designed to meet the diverse needs of our patients. Our state-of-the-art facilities are equipped with the latest technology to ensure accurate diagnoses and effective treatments. We believe in a holistic approach to health, focusing on not only physical well-being but also mental and emotional health. Our mission is to enhance the quality of life for our patients through comprehensive, compassionate, and accessible healthcare services.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="img-box mt-5">
+                            <img src="/Pictures/image-12.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+             <!-- service section  -->
+        <section class="container service-section" id="services">
+            <h2>Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card ">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-color">General Medicine</h5>
+                            <p class="card-text fw-semibold text-color">Comprehensive healthcare services including preventive care, diagnosis, and treatment of a wide range of medical conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card ">
+                        <div class="card-body" >
+                            <h5 class="card-title  fw-semibold text-color">Pediatrics</h5>
+                            <p class="card-text fw-semibold text-color">Specialized care for infants, children, and adolescents, including routine check-ups, vaccinations, and treatment for illnesses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-color">Cardiology</h5>
+                            <p class="card-text fw-semibold text-color">Comprehensive cardiac care with diagnostics, interventional procedures, and rehabilitation services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Orthopedics</h5>
+                            <p class="card-text text-color fw-semibold">Expert care for musculoskeletal conditions, including fractures, joint replacements, and spine disorders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Obstetrics & Gynecology</h5>
+                            <p class="card-text text-color fw-semibold">Comprehensive care including prenatal care, childbirth services, gynecological surgeries, and women's health services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Emergency Services</h5>
+                            <p class="card-text text-color fw-semibold">24/7 emergency department fully equipped to handle medical emergencies with skilled professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Surgery</h5>
+                            <p class="card-text text-color fw-semibold">Offering a wide range of surgical procedures, including minimally invasive and laparoscopic surgeries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Diagnostic Imaging</h5>
+                            <p class="card-text text-color fw-semibold">Comprehensive diagnostic imaging services including X-ray, MRI, CT scan, and ultrasound Lorem ipsum dolor sit..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-color ">Physical Therapy & Rehabilitation</h5>
+                            <p class="card-text fw-semibold text-color">Personalized therapy plans to help patients recover from injuries, surgeries, and chronic conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/Pictures/image-1.png" alt="">  </div>
+                 <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Obstetrics & Gynecology</h5>
+                            <p class="card-text text-color fw-semibold">Comprehensive care including prenatal care, childbirth services, gynecological surgeries, and women's health services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-color fw-semibold">Obstetrics & Gynecology</h5>
+                            <p class="card-text text-color fw-semibold">Comprehensive care including prenatal care, childbirth services, gynecological surgeries, and women's health services.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+       </section> -->
+    <!-- footer  -->
+    <footer class=" container-fluid foot-body pt-5 pb-4 ">
+            <div class="row">
+                <div class="col-md-3  mx-auto mt-3">
+                  
+                       
+                        <h5 class="text-uppercase mb-4 fw-bold "> <i class="mdi mdi-plus-outline fs-4"></i> Hospital Name</h5>
+                    <p class="para-box">
+                        Our hospital provides world-class healthcare services with a team of highly skilled doctors and medical professionals. We are committed to improving the health and well-being of our community.
+                    </p>
+                </div>
+
+                <div class="col-md-2  mt-3 foot-para-a">
+                    <h5 class="text-uppercase mb-4 fw-bold">Quick Links</h5>
+                    <p class="">
+                        <a class="para-box" href="">Home</a>
+                    </p>
+                    <p>
+                        <a class="para-box" href="#">About Us</a>
+                    </p>
+                    <p>
+                        <a class="para-box" href="#">Services</a>
+                    </p>
+                    <p>
+                        <a class="para-box" href="#">Contact Us</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3  mx-auto mt-3 foot-para-a ">
+                    <h5 class="text-uppercase mb-4 fw-bold">Contact</h5>
+                    <p class="para-box">
+                        <i class="mdi mdi-hospital fs-5"></i>
+                      1234 Main Street, jabalpur, 
+                    </p>
+                    <p class="para-box">
+                        <i class="mdi mdi-map-marker fs-5"></i>
+                       info@hospital.com
+                    </p>
+                 
+                   
+                    <p class="para-box ">
+                        <i class="mdi mdi-phone-in-talk fs-5"></i>
+                       +1 234 567 890
+                    </p>
+              
+                    <p class="para-box">
+                        <i class="mdi mdi-phone-in-talk fs-5 "></i>
+                    +1 234 567 890
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 ">
+                    <p class="text-center para-box">© 2024 Hospital Name. All rights reserved.</p>
+                </div>
+
+                <div class="col-md-5">
+                    <p class="text-center para-box">Hospital <a href="#" class="text-black"><strong class="text-color">Website</strong></a></p>
+                </div>
+            </div>  
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

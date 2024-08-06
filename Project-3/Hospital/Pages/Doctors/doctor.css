@@ -1,0 +1,290 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #004861;
+    }
+    h2{
+        color: #004861;
+    }
+    .text-color{
+        color: #004861;
+    }
+    .logo img{
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 9px;
+        margin-left: 5px;
+        
+    }
+    .navbar-link a {
+        /* color: #333; */
+        color: #004861;
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+     .navbar-link a:hover {
+        transform: scale(1.1);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.18);
+    
+      }
+    #navbarNav{
+        display: flex;
+        justify-content: end;
+        margin-right: 3rem;
+        color: #004861;
+        /* background: #009386; */
+    }
+    #navbarNav:hover a{
+        color: #004861;
+    }
+    .list-hover:hover{
+        background:#99e9e4;
+        color: #004861;
+        width: 9rem;
+        margin-left: 8px;
+    }
+    .nav-text{
+        color: #004861;
+        font-weight: 600;
+        margin-top: 4px;
+    }
+    .carousel-inner img {
+        height: 400px;
+        object-fit: cover;
+        
+    }
+    .carousel-btn-right {
+        margin-top: 33rem;
+    }
+    .carousel-btn-left{
+    margin-top: 33rem;
+    margin-left: 73rem;
+    }
+    .carousel-item {
+        /* background: #2CB5EB; */
+        /* background: #b5ede9; */
+        background: #9adeda;
+        /* opacity: 0.2; */
+        /* background: white; */
+        height: 38rem;
+    }
+    .banner-img-1{
+        object-fit: cover;
+        position: relative;
+        object-position: center;
+        width: 29rem;
+        height: 30rem;
+        margin-left: 10rem;
+        /* margin-top: 5px; */
+        
+        }
+    .banner-img-1 img{
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+       
+    }
+    .banner-img{
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+    width: 34rem;
+    height: 20rem;
+    margin-left: 3rem;
+    /* margin-top: 5px; */
+    
+    }
+    .banner-img img{
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: 1px 7px;
+        /* margin-top: 1rem; */
+    }
+    .banner-text{
+        position: absolute;
+        bottom: 14rem;
+        left: 39rem;
+        width: 50rem;
+       
+       
+    }
+    .banner-text h2{
+        font-size: 3rem;
+        /* font-weight: 500; */
+    }
+    /* heading of our doctor  */
+    .heading-sec{
+        margin-top: 5rem;
+    }
+    /* grp img section  */
+    .grp-img img{
+        margin-top: 2rem;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 35rem;
+    }
+     /* doctor imgs and there details  */
+     .doc-1-whole{
+        margin-top: 5rem;
+        background: #eaf4f8; 
+        height: 36rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.24s ease, box-shadow 0.3s ease;
+     }
+     .doc-1-whole:hover, .doc-2-whole:hover, .doc-3-whole:hover {
+        transform: scale(1.03); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+      } 
+      .doc-1-whole:hover .doc-1-img img,
+     .doc-1-whole:hover .doc-2-img img,
+     .doc-3-whole:hover .doc-3-img img {
+      transform: scale(0.89); 
+}
+
+.doc-1-img img, .doc-2-img img, .doc-3-img img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.30s ease; 
+}
+
+.doc-1-img, .doc-2-img, .doc-3-img {
+  overflow: hidden;
+  border-radius: 15px;
+}
+     .doc-1-img img{
+        object-fit: cover;
+        object-position: top;
+        width: 69%;
+        margin-top: 2rem;
+        height: 32rem;
+        margin-left: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+
+     }
+     .doc-1-whole-text{
+        margin-top: 4rem;
+        text-align: justify;
+        margin-right:3rem;
+        margin-left: -9rem;
+
+     }
+     /* doctoer 2  */
+     .doc-2-img img{
+        object-fit: cover;
+        object-position: top;
+        width: 78%;
+        margin-top: 3rem;
+        height: 30rem;
+        margin-left: 6rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+
+     }
+     .doc-2-whole-text{
+        margin-top: 4rem;
+        text-align: justify;
+        margin-left:2rem;
+
+     }
+     /* doctor 3  */
+     .doc-3-img img{
+        object-fit: cover;
+        object-position: top;
+        width: 68%;
+        margin-top: 30px;
+        margin-left: 2rem;
+        height: 30rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+
+     }
+     .doc-3-whole{
+        margin-top: 5rem;
+        background: #eaf4f8;     
+         height: 34rem;
+        transition: transform 0.24s ease, box-shadow 0.3s ease;
+     }
+     /* cards of doctor  */
+     .doc-card-body{
+        margin-top: 6rem;
+     }
+     .box-1-card img{
+        object-fit: cover;
+        object-position: center;
+        width: 30%;
+        height: 19%;
+        /* padding: 10px; */
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-top: 10px;
+     }
+     .box-1-card{
+        width: 35rem;
+        background: whitesmoke;
+        border: none;
+        /* transition: background-color 0.9s ease-out;  */
+        transition: transform 0.27s ease-in-out;
+        
+     }
+     .phone img{
+        width: 22px;
+        height: 22px;
+        margin-top: 12px;
+        padding: 0px !important;
+     }
+     .phone p{
+        padding-top:11px;
+        margin-left: 4px;
+     }
+
+.box-1-card:hover {
+    /* background-color: #e0f7fa;  */
+    background: #eaf4f8;     
+
+  }
+
+.box-1-card:hover .card-body, 
+.box-1-card:hover .card-title,
+.box-1-card:hover .card-text,
+.box-1-card:hover .phone p {
+  /* color: #00796b; */
+  color: black;
+   /* Change text color on hover */
+}
+ 
+  .box-1-card:hover{
+    transform:scale(1.05);
+  }
+  
+
+.para-box {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: justify;
+}
+.foot-body{
+    /* background: #9adeda; */
+    background: whitesmoke;
+    margin-top: 5rem;
+}
+footer a {
+    color: #004861;
+    text-decoration: none;  
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: none;
+}

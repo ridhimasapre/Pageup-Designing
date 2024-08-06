@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="service.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+
+</head>
+<body>
+      <!-- Navbar -->
+      <nav class=" navbar navbar-expand-lg nav-body bg-white sticky-top shadow-sm" >
+        <div class="fw-semibold fs-4 ms-4 pt-2">Hospital</div>
+        <div class="logo">
+           <img src="/Icons/heart-attack.png" alt="">
+        </div>
+       <div class="collapse navbar-collapse " id="navbarNav">
+           <ul class="navbar-nav ml-auto fw-semibold navbar-link">
+               <li class="nav-item ">
+                   <a class="nav-link fs-5 ms-4 nav-text mt-2" href="/Html/index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Services/service.html">Services</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Doctors/doctor.html">Doctors</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link  fs-5 nav-text mt-2 ms-4" href="/Pages/Contact/contact.html">Contact Us</a>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle ms-4 mt-2 fs-5 nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Treatement
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Cardiologist</a></li> 
+                     <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Neurologist</a></li>
+                     <li><a class="dropdown-item fs-6 fw-semibold text-color list-hover" href="/Pages/Treatment/treatment.html">Orthopedist</a></li>
+                   </ul>
+                 </li>
+               <li class="nav-item mb-2">
+                   <!-- <a class="nav-link fs-5 nav-text" href="#Booking"><button class="btn book-btn btn-sm fw-semibold ms-4">Book Now</button></a> -->
+               </li>
+           </ul>
+       </div>
+   </nav>
+   <!-- Carousel -->
+   <div id="carouselExampleCaptions" class="carousel slide " >
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       </div>
+       <div class="carousel-inner position-relative">
+         <div class="carousel-item active ">
+           <div class="banner-img-1">
+           <img src="/Pictures/bg-1.png" class="d-block w-100" alt="..."></div>
+           <div class="carousel-caption d-none d-md-block text-black banner-text ">
+             <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+             <p class="fs-4 fw-medium text-color text-start"> Our medical specialists care about you & your family's health.</p>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <div class="banner-img">
+           <img src="/Pictures/bg-2.png" class="d-block w-100" alt="..."></div>
+           <div class="carousel-caption d-none d-md-block text-black banner-text ">
+             <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+             <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+           </div>
+         </div>
+         <div class="carousel-item">
+           <div class="banner-img">
+           <img src="/Pictures/image-03.png" class="d-block w-100" alt="..."></div>
+           <div class="carousel-caption d-none d-md-block text-black banner-text">
+             <h2 class="fw-bold text-start">A Team Of Medical  Professionals To Take Care Of Your Health</h2>
+             <p class="fs-4 fw-medium text-color text-start">Our medical specialists care about you & your family's health.</p>
+           </div>
+         </div>
+       </div>
+       <button class="carousel-control-prev carousel-btn-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next carousel-btn-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+         <span class="carousel-control-next-icon  carousel-btn-span" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div>
+     <!-- box 1 -->
+      <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/Pictures/image-1.png" alt="">  </div>
+                 <div class="col-md-6   box-1-text">
+                    <h2 class="fw-bold ">We're setting Standards in Research what's more, Clinical Care.</h2>
+                    <p class="text-color mt-4 fw-semibold">We provide the most full medical services, so every person could have the pportunity o receive qualitative medical help. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nulla itaque dolorem repellat fuga amet inventore recusandae consectetur, nemo non aliquam officia dolore at fugit in, illo eum optio ea.</p>
+                    <p class="text-color mt-2 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempora mollitia quasi voluptatem aperiam laudantium nesciunt impedit sint repellendus dolorum!</p>
+                </div>
+        </div>
+       </section>
+       <section class="container mt-5">
+        <div class="row">
+            
+                 <div class="col-md-6  box-1-text">
+                    <h2 class="fw-bold ">We're setting Standards in Research what's more, Clinical Care.</h2>
+                    <p class="text-color mt-4 fw-semibold">We provide the most full medical services, so every person could have the pportunity o receive qualitative medical help. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nulla itaque dolorem repellat fuga amet inventore recusandae consectetur, nemo non aliquam officia dolore at fugit in, illo eum optio ea.</p>
+                    <p class="text-color mt-2 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempora mollitia quasi voluptatem aperiam laudantium nesciunt impedit sint repellendus dolorum!</p>
+                </div>
+                <div class="col-md-6 box-2-img">
+                    <img src="/Pictures/image-2.png" alt="">  </div>
+        </div>
+       </section>
+       <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 box-3-img">
+                <img src="/Pictures/image-3.png" alt="">  </div>
+                 <div class="col-md-6   box-1-text">
+                    <h2 class="fw-bold ">We're setting Standards in Research what's more, Clinical Care.</h2>
+                    <p class="text-color mt-4 fw-semibold">We provide the most full medical services, so every person could have the pportunity o receive qualitative medical help. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nulla itaque dolorem repellat fuga amet inventore recusandae consectetur, nemo non aliquam officia dolore at fugit in, illo eum optio ea.</p>
+                    <p class="text-color mt-2 fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempora mollitia quasi voluptatem aperiam laudantium nesciunt impedit sint repellendus dolorum!</p>
+                </div>
+        </div>
+      </section>
+
+      <section class="container my-5">
+        <div class="row ">
+          <div class="col-md-4 mb-4 ">
+            <div class="card-custom shadow-sm">
+              <div class="icon-circle position-relative">
+                <img src="/Icons/icon1.jpg" alt="">
+                <div class="icon-circle-number position-absolute fw-bold text-center fs-4">1</div>
+                  </div>
+              <h5 class="fw-semibold fs-4">Pharmacy Service</h5>
+              <p class="fw-semibold ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="">Learn More <span>&rarr;</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card-custom shadow-sm">
+              <div class="icon-circle position-relative">
+                <img src="/Icons/icon2.jpg" alt="">
+                <div class="icon-circle-number position-absolute fw-bold text-center fs-4">2</div>
+
+              </div>
+              <h5 class="fw-semibold fs-4">Medical Specialist</h5>
+              <p  class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="" >Learn More <span>&rarr;</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card-custom ">
+              <div class="icon-circle position-relative">
+                <img src="/Icons/icon4.jpg" alt="">
+                <div class="icon-circle-number position-absolute fw-bold text-center fs-4">3</div>
+
+              </div>
+              <h5 class="fw-semibold fs-4">Medical Checkup</h5>
+              <p  class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="">Learn More <span>&rarr;</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-custom shadow-sm">
+              <div class="icon-circle position-relative">
+                <img src="/Icons/icon5.jpg" alt="">
+                <div class="icon-circle-number position-absolute fw-bold text-center fs-4">4</div>
+              </div>
+              <h5 class="fw-semibold fs-4">Health Consultation</h5>
+              <p class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="" >Learn More <span>&rarr;</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-custom shadow-sm">
+              <div class="icon-circle position-relative">
+                <img src="/Icons/icon6.jpg" alt="">
+                <div class="icon-circle-number position-absolute fw-bold text-center fs-4">5</div>
+              </div>
+              <h5 class="fw-semibold fs-4">Ambulance Service</h5>
+              <p  class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="">Learn More <span>&rarr;</span></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mt-4">
+            <div class="card-custom shadow-sm">
+              <div class="icon-circle position-relative">
+                <img src="/Icons/icon9.jpg" alt="">
+                <div class="icon-circle-number position-absolute fw-bold text-center fs-4">6</div>
+              </div>
+              <h5 class="fw-semibold fs-4">Health Assurance</h5>
+              <p class="fw-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="" >Learn More <span>&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- three hover cards  -->
+<!--        
+       <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card service-card shadow">
+              <div class="card-body text-color ">
+                <div class="icon-container">
+                  <img src="/Icons/doctor.png" alt="">
+                </div>
+                <h5 class="card-title ">Cardiology</h5>
+                <p class="card-text  fw-semibold">Comprehensive cardiac care with advanced diagnostics and treatments.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card shadow">
+              <div class="card-body text-color">
+                <div class="icon-container ">
+                  <img src="/Icons/doctor-consultation.png" alt="">
+                </div>
+                <h5 class="card-title">General Medicine</h5>
+                <p class="card-text fw-semibold">Expert medical consultations and personalized healthcare services.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card service-card shadow">
+              <div class="card-body text-color">
+                <div class="icon-container">
+                  <img src="/Icons/patient-12.png" alt="">
+                </div>
+                <h5 class="card-title">Radiology</h5>
+                <p class="card-text fw-semibold">State-of-the-art imaging technologies for accurate diagnosis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+        <!-- normarl card left img nd right text box -6 -->
+         <section class="container box-6-body">
+          <div class="row doc-rows ">
+            <div class="col-md-6">
+                <div class="box-6-img ">
+                    <img src="/Pictures/blog3-800x530.jpg" alt="">
+                </div>
+            </div>
+                <div class="col-md-6 box-6-text-body ">
+                <div class="box-6-text mt-3 ">
+                    <h2 class="fw-bold">Expert Surgical Care for Your Health</h2>
+                    <p class="fw-semibold mt-3">We pride ourselves on providing cutting-edge surgical services performed by our highly skilled team of surgeons. Our state-of-the-art operating rooms and advanced technology ensure that you receive the best possible care during your surgical procedure. Whether it a routine surgery or a more complex operation. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, quas! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="row fw-semibold ">
+                <div class="col-6">
+                  <ul class="box-6-li">
+                    <li class="img-box">
+                      <img  src="/Icons/double-check.png" alt="">
+                     <span>Positive Reviews </span>
+                    </li>
+                    <li class="mt-2 img-box"> 
+                      <img src="/Icons/double-check.png" alt="">
+                     <span>Personalized Approach</span>
+                    </li>
+                    <li class="mt-2 img-box">
+                      <img  src="/Icons/double-check.png" alt="">
+                     <span>Patient-Centered Care</span>
+                    </li>
+                    <li class="mt-2 img-box">
+                      <img  src="/Icons/double-check.png" alt="">
+                     <span>Cutting-Edge</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="box-6-li">
+                    <li class="img-box">
+                      <img  src="/Icons/double-check.png" alt="">
+                     <span>Seamless Care</span>
+                    </li>
+                    <li class="mt-2 img-box"> 
+                      <img src="/Icons/double-check.png" alt="">
+                     <span>Expert Doctors</span>
+                    </li>
+                    <li class="mt-2 img-box">
+                      <img  src="/Icons/double-check.png" alt="">
+                     <span>Comprehensive Care</span>
+                    </li>
+                    <li class="mt-2 img-box">
+                      <img  src="/Icons/double-check.png" alt="">
+                     <span>Welcoming</span>
+                    </li>
+                  </ul>
+                </div>
+               
+              </div>
+            </div>
+          
+        </div>
+         </section>
+
+         <div class="hero-section">
+          <div class="container ">
+              <div class="row  hero-section-text ">
+                  <div class="col ">
+                      <h1 class="fw-semibold ">WE ARE HIRING!!</h1>
+                      <p class=" fw-semibold ">Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor.</p>
+                      <p class="fw-semibold fs-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, alias.</p>
+                      <button class="btn btn-primary fw-semibold btn-lg ">Discover More</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+       
+         <!-- contactus form  -->
+          <!-- <section class="container mt-5">
+            <div class="row">
+              <div class="col-md-6 box-7-img">
+                <img src="/Pictures/header-img.png" alt="">
+              </div>
+            <div class="col-md-6 info-box">
+              <div class="contact-info ">
+                <h4 class="fw-bold mt-3">Contact Information</h4>
+                <p class="fw-semibold">Address: 123 Health St, Wellness City, Care State, 12345</p>
+                <p><strong>Phone Numbers:</strong></p>
+                <ul class="fw-semibold line-style">
+                  <li>General Inquiries: (123) 456-7890</li>
+                  <li>Emergency: (123) 456-7891</li>
+                </ul>
+                <p><strong>Email:</strong> <a href="mailto:contact@hospital.com">contact@hospital.com</a></p>
+              </div>
+            
+              <div class="opening-hours fw-semibold">
+                <h4 class="text-color fw-semibold">Opening Hours</h4>
+                <ul class="line-style">
+                  <li>Mon-Fri: 8:00 AM - 8:00 PM</li>
+                  <li>Sat: 9:00 AM - 5:00 PM</li>
+                  <li>Sun: Closed</li>
+                </ul>
+              </div>
+            
+              <div class="service">
+                <h4 class="fw-semibold">Services</h4>
+                <p class="fw-semibold">Cardiology, Maternity, Surgery, Pediatrics, etc.</p>
+              </div>
+            
+            
+              <div class="social-icons">
+                <h4 class="fw-semibold mb-3">Follow Us</h4>
+                <a href="#" class="btn fw-semibold text-white btn-primary btn-sm">Facebook</a>
+                <a href="#" class="btn fw-semibold text-white btn-info btn-sm ms-2">Twitter</a>
+                <a href="#" class="btn fw-semibold text-white btn-danger btn-sm ms-2">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </section> -->
+          <!-- box 7  -->
+          <div class="container box-7-section">
+            <div class="row align-items-center">
+                <div class="col-md-6 box-7-img">
+                    <img src="/Pictures/header-img.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="header-content">
+                        <h1 class=" fw-bold mb-2">Excellence in Healthcare</h1>
+                        <p class=" fw-semibold">Committed to your well-being</p>
+                        <div class="box-7-cards">
+                            <div class="box-7-card">
+                                <h4 class="fw-semibold">Expert Doctors</h4>
+                                <p class="fw-semibold">World-class medical professionals</p>
+                            </div>
+                            <div class="box-7-card">  
+                                <h4 class="fw-semibold">Modern Facilities</h4>
+                                <p class="fw-semibold">State-of-the-art equipment and infrastructure</p>
+                            </div>
+                            <div class="box-7-card">
+                                <h4 class="fw-semibold">Patient Care</h4>
+                                <p class="fw-semibold">Personalized and compassionate care</p>
+                            </div>
+                        </div>
+                        <div class="box-7-card-1 mt-5">
+                          <h4 class="fw-semibold">Patient Care</h4>
+                          <p class="fw-semibold">Personalized and compassionate care</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <section class="container-fluid mt-5">
+            <div class="row box-9">
+              <div class="row ps-5">
+                <div class="box-icon-img col-md-1 ">
+                <img src="/Icons/patient.png" alt=""></div>
+                <div class="col-md-3 box-img-text">
+                <span><h4 class="ms-3 fw-bold">Expert Doctors</h4>
+                 <p class="fw-semibold">Expert medical consultations and personalized healthcare services.</p>
+                </span></div>
+                <div class="box-icon-img col-md-1 ">
+                  <img src="/Icons/maps-and-flags.png" alt=""></div>
+                  <div class="col-md-3 box-img-text">
+                  <span><h4 class="ms-3 fw-bold">Emergency Care</h4>
+                   <p class="fw-semibold">Expert medical consultations and personalized healthcare services.</p>
+                  </span></div>
+                  <div class="box-icon-img col-md-1 ">
+                    <img src="/Icons/phone.png" alt=""></div>
+                    <div class="col-md-3 box-img-text">
+                    <span><h4 class="ms-3 fw-bold">24/7 Full Support</h4>
+                     <p class="fw-semibold">Expert medical consultations and personalized healthcare services.</p>
+                    </span></div>
+               </div>
+                
+            </div>
+          </section>
+          <!-- box-8  -->
+           <section class="container-fluid box-8-body">
+            <div class="row">
+              <div class="box-8-img">
+              <img src="/Pictures/young-multiracial-doctor-sitting-at-reception-and-GCCHF87.jpg" alt="">
+            </div>
+            <div class="col-md-4 box-8-text text-center border border-dark-subtle">
+              <h3 class="fw-bold fs-3 pt-4">WORKING HOURS</h3>
+              <p class="fw-semibold">Healthcare at Its Finest</p>
+              <p class="fw-medium px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio Lorem, ipsum dolor.</p>
+              <div class="row fw-semibold fs-5 pt-3 box-8-ul">
+              <!-- <div class="col-md-4">
+                <ul >
+                  <li>Mon-Wed</li>
+                  <li>Mon-Wed</li>
+                  <li>Mon-Wed</li>
+                </ul>
+              </div>
+              <div class="col-md-7">
+                <ul>
+                  <li>7:00 AM - 11:00 PM</li>
+                  <li>7:00 AM - 11:00 PM</li>
+                  <li>7:00 AM - 11:00 PM</li>
+                </ul>
+              </div> -->
+              <div class="d-flex justify-content-around border-top border-bottom pt-2">
+              <p>Mon-Wed</p>
+              <p>7:00 AM - 11:00 PM</p>
+            </div>
+            <div class="d-flex justify-content-around  border-bottom pt-2">
+              <p>Mon-Wed</p>
+              <p>7:00 AM - 11:00 PM</p>
+            </div>
+            <div class="d-flex justify-content-around border-bottom pt-2">
+              <p>Mon-Wed</p>
+              <p>7:00 AM - 11:00 PM</p>
+            </div>
+            </div>
+            <button class="btn btn-light rounded-pill mt-5 appoint-btn fw-semibold">Make an Appointment</button>
+            </div>
+            </div>
+           </section>
+           
+  <!-- map field  -->
+  <section class="container-fluid map-box">
+    <div class="row">
+      <div class="col">
+    <div class="map-img">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.550761156197!2d79.92560147515766!3d23.186590779059195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981afa778449755%3A0xa8e6ab19d204e4d!2sBaderia%20Metro%20Prime%20Hospital%20-%20Jabalpur!5e0!3m2!1sen!2sin!4v1722491823605!5m2!1sen!2sin" width="1450" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.550761156179!2d79.92560147515766!3d23.186590779059195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981afa778449755%3A0xa8e6ab19d204e4d!2sBaderia%20Metro%20Prime%20Hospital%20-%20Jabalpur!5e0!3m2!1sen!2sin!4v1722578305173!5m2!1sen!2sin" width="1450" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+</div>
+    </section>
+        <!-- contact field  -->
+<!-- <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="card-container ">
+          <div class="card-box border border-info border-3 rounded">
+            <div class="card-body text-color fw-semibold">
+              <h5 class="card-title">Orthopedics</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos sequi excepturi magni eius numquam, autem minima. Fugiat, nobis tenetur!</p>
+            </div>
+          </div>
+          <div class="card-box mt-3 border border-info border-3 rounded">
+            <div class="card-body text-color fw-semibold">
+              <h5 class="card-title">Pediatrics</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione, itaque cupiditate placeat reiciendis repudiandae veritatis explicabo ab ad. Dignissimos?</p>
+            </div>
+          </div>
+          <div class="card-box mt-3 border border-info border-3 rounded">
+            <div class="card-body text-color fw-semibold">
+              <h5 class="card-title">Obstetrics & Gynecology</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit asperiores molestiae, nisi aspernatur voluptas necessitatibus numquam veniam blanditiis eum non.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 ">
+        <div class="form-container card-box border border-info border-3 rounded">
+          <form class="text-color fw-semibold mt-5 info me-5">
+            <div class="name-box">
+              <label for="name ">Name</label>
+              <input  type="text" class="form-control"  placeholder="Enter your name">
+            </div>
+            <div class="contact-box mt-4">
+              <label for="contact">Contact No</label>
+              <input type="text" class="form-control" placeholder="Enter your contact number">
+            </div>
+            <div class="email-box mt-4">
+              <label for="email">Email</label>
+              <input type="email" class="form-control"  placeholder="Enter your email">
+            </div>
+            <div class="message-box mt-4">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info text-black fw-semibold mt-4 mb-3">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+</section> -->
+
+
+<footer class=" container-fluid foot-body pt-5 pb-4 ">
+  <div class="row">
+      <div class="col-md-3  mx-auto mt-3">
+        
+             
+              <h5 class="text-uppercase mb-4 fw-bold "> <i class="mdi mdi-plus-outline fs-4"></i> Hospital Name</h5>
+          <p class="para-box">
+              Our hospital provides world-class healthcare services with a team of highly skilled doctors and medical professionals. We are committed to improving the health and well-being of our community.
+          </p>
+      </div>
+
+      <div class="col-md-2  mt-3 foot-para-a">
+          <h5 class="text-uppercase mb-4 fw-bold">Quick Links</h5>
+          <p class="">
+              <a class="para-box" href="">Home</a>
+          </p>
+          <p>
+              <a class="para-box" href="#">About Us</a>
+          </p>
+          <p>
+              <a class="para-box" href="#">Services</a>
+          </p>
+          <p>
+              <a class="para-box" href="#">Contact Us</a>
+          </p>
+      </div>
+
+      <div class="col-md-3  mx-auto mt-3 foot-para-a ">
+          <h5 class="text-uppercase mb-4 fw-bold">Contact</h5>
+          <p class="para-box">
+              <i class="mdi mdi-hospital fs-5"></i>
+            1234 Main Street, jabalpur, 
+          </p>
+          <p class="para-box">
+              <i class="mdi mdi-map-marker fs-5"></i>
+             info@hospital.com
+          </p>
+       
+         
+          <p class="para-box ">
+              <i class="mdi mdi-phone-in-talk fs-5"></i>
+             +1 234 567 890
+          </p>
+    
+          <p class="para-box">
+              <i class="mdi mdi-phone-in-talk fs-5 "></i>
+          +1 234 567 890
+          </p>
+      </div>
+  </div>
+
+  <hr class="mb-4">
+
+  <div class="row align-items-center">
+      <div class="col-md-7 ">
+          <p class="text-center para-box">© 2024 Hospital Name. All rights reserved.</p>
+      </div>
+
+      <div class="col-md-5">
+          <p class="text-center para-box">Hospital <a href="#" class="text-black"><strong class="text-color">Website</strong></a></p>
+      </div>
+  </div>  
+</footer>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
