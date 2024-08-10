@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Section with Hover Effect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+</head>
+<body>
+      <!-- Nav top section   -->
+ <section class="container-fluid">
+    <div class="row top-body text-white">
+        <div class="col-md-4 ms-5"><i class="mdi mdi-map-marker-outline"></i>1418  Riverwood,CA 96053,US</div>
+        <div class="col-md-5">Welcome To FastTrack!Somethink you love now on sale</div>
+        <div class="col-md-2">
+            <select name="" class="bg-transparent selection" id="">
+                <option value="">English</option>
+                <option value="">Hindi</option>
+            </select>
+        </div>
+    </div>
+ </section>
+ <!-- nav bar  -->
+  <section class="container">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid nav-body">
+            <h3 class="fast-color fw-bold">FAST<span class="text-black">KART</span></h3>
+            <!-- <div class=""> -->
+            <form class="d-flex form-search" role="search">
+                <input class="form-control me-1 " type="search" placeholder="I'm searching for..." aria-label="Search">
+                <button class="btn btn-warning" type="submit"><i class="mdi mdi-magnify search-icon"></i></button>
+              </form>
+              <select class=" selection-location " name="" id="" > <i class="mdi mdi-map-marker-outline "></i>
+                <option selected><i class="mdi mdi-map-marker-outline"></i>Your Location</option>
+                    <option value="">India</option>
+                <option value="">USA</option>
+              </select>
+              <div class="icons d-flex">
+                <i class="nav-icon mdi mdi-phone-in-talk"></i>
+                <div class="single-line "></div>
+                <i class="nav-icon mdi mdi-heart-outline"></i>
+                <div class="single-line"></div>
+                <i class="nav-icon mdi mdi-account-plus-outline"></i>
+                <div class="single-line "></div>
+                <i class="nav-icon mdi mdi-shopping-outline"></i>
+              </div>
+          <!-- <a class="navbar-brand" href="#"></a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div>
+          <!-- </div> -->
+        </div>
+      </nav>
+    </section>
+    <!-- nav bar  -->
+    <section class="container">
+      <div class="row">
+        <div class="col-md-2 category-btn">
+          <button><i class="mdi mdi-menu"></i> All Categories</button>
+        </div>
+        <div class="col-7 nav-links ">
+          <ul class="nav justify-content-center ">
+            <li class="nav-item dropdown ">
+              <a class="nav-link nav-a nav-home" aria-current="page" href="#">Home <i class="mdi mdi-chevron-down down-key"></i></a>
+              <ul class="dropdown-text">
+                <li class="dropdown-a"><a  href=""> CartShop</a></li>
+                <li class="dropdown-a"><a  href=""> SuperShop</a></li>
+                <li class="dropdown-a"><a  href=""> Organic</a></li>
+                <li class="dropdown-a"><a  href=""> OfferShop</a></li>
+                <li class="dropdown-a"><a  href=""> Clissic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-a" href="#">Shope <i class="mdi mdi-chevron-down down-key"></i></a>
+              <ul class="dropdown-text">
+                <li class="dropdown-a"><a  href="">Shop List</a></li>
+                <li class="dropdown-a"><a  href="">Shop Category</a></li>
+                <li class="dropdown-a"><a  href="">Shop Info</a></li>
+                <li class="dropdown-a"><a  href="">Shop Details</a></li>
+                <li class="dropdown-a"><a  href="">Shop Items</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-a" href="#">Product <i class="mdi mdi-chevron-down down-key"></i></a>
+              <ul class="dropdown-text">
+                <li class="dropdown-a"><a  href=""> CartShop</a></li>
+                <li class="dropdown-a"><a  href=""> SuperShop</a></li>
+                <li class="dropdown-a"><a  href=""> Organic</a></li>
+                <li class="dropdown-a"><a  href=""> OfferShop</a></li>
+                <li class="dropdown-a"><a  href=""> Clissic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-a" >Menu <i class="mdi mdi-chevron-down down-key"></i></a>
+              <ul class="dropdown-text">
+                <li class="dropdown-a"><a  href=""> CartShop</a></li>
+                <li class="dropdown-a"><a  href=""> SuperShop</a></li>
+                <li class="dropdown-a"><a  href=""> Organic</a></li>
+                <li class="dropdown-a"><a  href=""> OfferShop</a></li>
+                <li class="dropdown-a"><a  href=""> Clissic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-a" >Blog <i class="mdi mdi-chevron-down down-key"></i></a>
+              <ul class="dropdown-text">
+                <li class="dropdown-a"><a  href=""> CartShop</a></li>
+                <li class="dropdown-a"><a  href=""> SuperShop</a></li>
+                <li class="dropdown-a"><a  href=""> Organic</a></li>
+                <li class="dropdown-a"><a  href=""> OfferShop</a></li>
+                <li class="dropdown-a"><a  href=""> Clissic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link nav-a" >Pages <i class="mdi mdi-chevron-down down-key"></i></a>
+              <ul class="dropdown-text">
+                <li class="dropdown-a"><a  href="">Contact</a></li>
+                <li class="dropdown-a"><a  href="">Checkout</a></li>
+                <li class="dropdown-a"><a  href="">Soon</a></li>
+                <li class="dropdown-a"><a  href="">Pages</a></li>
+                <li class="dropdown-a"><a  href="">Websites</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+         <!-- deal today  -->
+        </div>
+      </div>
+    </section>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3 sticky-top box-1-left">
+                <form class="d-flex position-relative sticky-top" role="search">
+                    <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                    <i class="mdi mdi-magnify position-absolute search"></i>
+                  </form>
+                  <div class=" recent-post mt-3 rounded pt-3 ps-3">
+                    <div class="d-flex ">
+                        <img src="/Pictures/blog1.jpg" class=" post-img-1" alt="">
+                        <div class="mt-2  p-2"><div class="fw-medium">Green onion knife and salad and more..</div>
+                            <span class="text-secondary ">9 Aug 2024 <i class="mdi mdi-thumb-up-outline"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img src="/Pictures/blog1.jpg" class=" post-img-1" alt="">
+                        <div class="mt-2  p-2"><div class="fw-medium">Green onion knife and salad and more..</div>
+                            <span class="text-secondary ">9 Aug 2024 <i class="mdi mdi-thumb-up-outline"></i>
+                            </span>
+                        </div>  
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img src="/Pictures/blog1.jpg" class=" post-img-1" alt="">
+                        <div class="mt-2  p-2"><div class="fw-medium">Green onion knife and salad and more..</div>
+                            <span class="text-secondary ">9 Aug 2024 <i class="mdi mdi-thumb-up-outline"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img src="/Pictures/blog1.jpg" class=" post-img-1" alt="">
+                        <div class="mt-2  p-2"><div class="fw-medium">Green onion knife and salad and more..</div>
+                            <span class="text-secondary ">9 Aug 2024 <i class="mdi mdi-thumb-up-outline"></i>
+                            </span>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  <div class="mt-3  category rounded sticky-top">
+                    <div>
+                        <h4 class="ms-4 pt-3">Category</h4>
+                        <ul class="categories-list">
+                            <li class="mt-3">Latest Recipes <span class="badge badge-icon">4</span></li>
+                            <li class="mt-3">Diet Food <span class="badge badge-icon-1">6</span></li>
+                            <li class="mt-3">Cooking Methods <span class="badge badge-icon-2">9</span></li>
+                            <li class="mt-3">Dairy Free <span class="badge badge-icon-3">1</span></li>
+                            <li class="mt-3">Veg Food <span class="badge badge-icon-4">1</span> </li>
+                            <li class="mt-3">Non-Veg <span class="badge badge-icon-4">2</span> </li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+            <div class="">
+                <div class="card mb-3  box-1-item">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/Pictures/blog1.jpg" class="img-fluid rounded-start box-1-img" alt="Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Crispy Frozen Vegetable Is On The Tempura.</h5>
+                                <p class="card-text">Manchego cauliflower cheese st. agur blue cheese red leicester monterey jack cheesecake the big cheese edam. Gouda monterey jack roquefort hard cheese...</p>
+                                <p class="card-text"><small class="text-muted">25 FEB, 2022 • REBEUS HAGRID</small></p>
+                                <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container my-4"> -->
+            <!-- <div class="row"> -->
+                <div class="">
+                    <!-- First Card -->
+                    <div class="card mb-3  box-1-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/Pictures/blog2.jpg" class="img-fluid rounded-start box-1-img" alt="Image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Health and Skin for Your Organic Lifestyle</h5>
+                                    <p class="card-text">Discover how organic products can enhance your skin's health and bring a natural glow to your daily routine.</p>
+                                    <p class="card-text"><small class="text-muted">25 JAN, 2022 • SARAH CONNOR</small></p>
+                                    <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+   
+                    <!-- Second Card -->
+                    <div class="card mb-3  box-1-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/Pictures/blog3.jpg" class="img-fluid rounded-start box-1-img" alt="Image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Organics Mix Masala Fresh to Your Table</h5>
+                                    <p class="card-text">Explore the delicious world of organic spices and how they can elevate your culinary creations.</p>
+                                    <p class="card-text"><small class="text-muted">25 JAN, 2022 • JOHN DOE</small></p>
+                                    <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Third Card -->
+                    <div class="card mb-3  box-1-item">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="/Pictures/5 (1).jpg" class="img-fluid rounded-start box-1-img" alt="Image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fresh Organics Brand and Its Journey</h5>
+                                    <p class="card-text">Learn about the growth of a leading organic brand and how it's transforming the market with its innovative products.</p>
+                                    <p class="card-text"><small class="text-muted">25 JAN, 2022 • JANE SMITH</small></p>
+                                    <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+        <!-- section 2         -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Featured Articles</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card custom-card">
+                        <img src="/Pictures/last1.jpg" class="card-img-top custom-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Organic Farming: The Future of Agriculture</h5>
+                            <p class="card-text">Delve into the methods and benefits of organic farming, and why it's the way forward for sustainable agriculture.</p>
+                            <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card custom-card">
+                        <img src="/Pictures/last2.jpg" class="card-img-top custom-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Rise of Plant-Based Diets</h5>
+                            <p class="card-text">Explore the growing popularity of plant-based diets and their impact on health and the environment.</p>
+                            <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card custom-card">
+                        <img src="/Pictures/blog1.jpg" class="card-img-top custom-img" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 10 Organic Recipes to Try</h5>
+                            <p class="card-text">From breakfast to dinner, these organic recipes will inspire you to cook with the best ingredients nature has to offer.</p>
+                            <a href="#" class="btn read-btn">Read More <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 4         -->
+        <!-- <div class="container my-5">
+            <h2 class="text-center mb-4">Explore Categories</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Diet Food</h5>
+                            <p class="card-text">Discover a range of healthy, organic diet foods that cater to your nutritional needs.</p>
+                            <a href="#" class="btn btn-outline-success">View Posts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Low Calorie Items</h5>
+                            <p class="card-text">Explore low-calorie food options that are both delicious and nutritious.</p>
+                            <a href="#" class="btn btn-outline-success">View Posts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Latest Recipes</h5>
+                            <p class="card-text">Try the latest organic recipes that are trending in the food world right now.</p>
+                            <a href="#" class="btn btn-outline-success">View Posts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card custom-card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Organic Products</h5>
+                            <p class="card-text">Get insights on the best organic products available in the market today.</p>
+                            <a href="#" class="btn btn-outline-success">View Posts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- section 5         -->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <p class="card-text">"The quality of the organic products on this site is exceptional. I've never felt healthier!"</p>
+                            <p class="text-end text-color"><small class="text-muted">- Anna Johnson</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <p class="card-text">"Their organic recipes have transformed the way I cook. The flavors are amazing!"</p>
+                            <p class="text-end"><small class="text-muted">- Mark Wilson</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <p class="card-text">"I love the range of diet foods available. It's easy to stay healthy with their help."</p>
+                            <p class="text-end"><small class="text-muted">- Sarah Brown</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-md-4">
+                        <h3 class="fast-color fw-bold mb-3">FAST<span class="text-black">KART</span></h3>
+      
+                        <p>We are a friendly bar serving a variety of cocktails, wines and beers. Our bar is a perfect place for a couple. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, molestiae.</p>
+                        <p class="mb-2 mt-0"><i class="mdi mdi-home "></i> 1418 Riverwood Drive, CA 96052, US</p>
+                        <p><i class="mdi mdi-email"></i> support@fastkart.com</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="footer-title">Categories</h5>
+                        <ul class="list-unstyled ">
+                            <li class="mt-3"><a href="#">Vegetables & Fruit</a></li>
+                            <li class="mt-3"><a href="#">Beverages</a></li>
+                            <li class="mt-3"><a href="#">Meats & Seafood</a></li>
+                            <li class="mt-3"><a href="#">Frozen Foods</a></li>
+                            <li class="mt-3"><a href="#">Biscuits & Snacks</a></li>
+                            <li class="mt-3"><a href="#">Grocery & Staples</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="footer-title">Useful Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mt-3"><a href="#">Home</a></li>
+                            <li class="mt-3"><a href="#">Shop</a></li>
+                            <li class="mt-3"><a href="#">About Us</a></li>
+                            <li class="mt-3"><a href="#">Blog</a></li>
+                            <li class="mt-3"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="footer-title">Help Center</h5>
+                        <ul class="list-unstyled">
+                            <li class="mt-3"><a href="#">Your Order</a></li>
+                            <li class="mt-3"><a href="#">Your Account</a></li>
+                            <li class="mt-3"><a href="#">Track Order</a></li>
+                            <li class="mt-3"><a href="#">Your Wishlist</a></li>
+                            <li class="mt-3"><a href="#">Search</a></li>
+                            <li class="mt-3"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="footer-title">Contact Us</h5>
+                        <p>Hotline 24/7 :</p>
+                        <p><a href="tel:+918881042340">+91 888 104 2340</a></p>
+                        <p>Email Address :</p>
+                        <p><a href="mailto:fastkart@hotmail.com">fastkart@hotmail.com</a></p>
+                        <p>Download App :</p>
+                        <p class="d-flex flex-row">
+                            <a href="#"><img src="/Icons/appstore.svg" alt="Google Play" width="100"></a>
+                            <a href="#"><img src="/Icons/playstore.svg" alt="App Store" width="100"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row footer-bottom">
+                    <div class="col-md-12 text-center d-flex flex-row justify-content-evenly">
+                        <p>&copy; 2022 Fastkart All rights reserved</p>
+                        <p>
+                            
+                            <a href="#"><img src="/Icons/1 (1).png" alt="" width="300"></a>
+                        </p>
+                        <div class="d-flex">
+                        <p >Stay connected :</p>
+                        <p>
+                            <a href="#"><i class="mdi mdi-twitter"></i></a>
+                            <a href="#"><i class="mdi mdi-facebook"></i></a>
+                            <a href="#"><i class="mdi mdi-instagram"></i></a>
+                            <a href="#"><i class="mdi mdi-pinterest"></i></a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
