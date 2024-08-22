@@ -27,11 +27,11 @@ body{
     font-size: 22px;
 }
 .form-search {
-    margin-left: 8rem;
+    margin-left: 5rem;
 }
 .form-search input{
     height: 3rem;
-    width: 20rem;
+    width: 26rem;
 }
 .selection-location {
     height: 3rem;
@@ -47,9 +47,15 @@ body{
 .icons .nav-icon{
   /* width: 5rem;
   height: 2rem; */
-  font-size: 25px;
-  margin-left: 10px;
+  font-size: 33px;
+  margin-left: 13px;
   margin-right: 5px;
+}
+.icons{
+    margin-left: 6rem;
+    /* width: 10rem; */
+    /* text-align: left; */
+    padding-left: 29px;
 }
 .search-icon{
     color: white;
@@ -60,8 +66,9 @@ body{
     width: 5rem;
 }
 .single-line {
-    width: 2px;
-    height: 2rem;
+    width: 1px;
+    height: 3rem;
+    margin-left: 4px;
     background: grey;
 }
 .category-btn button{
@@ -73,6 +80,7 @@ body{
     width: 12rem;
     height: 3rem;
     font-size: 20px;
+    margin-left: 10px;
     /* padding: 4px; */
 }
 .nav-links{
@@ -105,9 +113,7 @@ cursor: pointer;
     border-radius: 5px;
     opacity: 0; 
     transform: translateY(-10px); 
-    transition: opacity 0.7s ease, transform 0.5s ease; 
-    
-    
+    transition: opacity 0.7s ease, transform 0.5s ease;    
 }
 .dropdown-text a {
     color: rgb(83, 82, 82);
@@ -120,7 +126,20 @@ cursor: pointer;
 .dropdown-text a:hover {
     color: #0da487;
 }
-
+.deal-today{
+    background: #e6f5f3;
+    width: 13rem;
+    height: 4rem;
+    color: #0da487;
+    text-align: center;
+    padding-top: 13px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 22px;
+    margin-left: 3rem;
+}
 .nav-item.dropdown:hover .dropdown-text {
     /* display: block;     */
     visibility: visible;
