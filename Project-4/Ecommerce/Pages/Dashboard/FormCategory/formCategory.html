@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CategoryForm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="formCategory.css">
+    <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+           <div class="row">
+               <div class="col">
+                   <div>
+                   <i class="head-icons mdi mdi-menu" id="toggle"></i></div>
+               </div>
+               <div class="col-7"></div>
+               <div class="col d-flex heading-last">
+                   <div>
+                   <select name="" id="" class="head-select">
+                       <option value="" selected>English</option>
+                       <option value="">Hindi</option>
+                   </select></div>
+                   <div class="modeIcon" id="modeIcon">
+                    <i class="head-icons mdi mdi-white-balance-sunny" id="themeChange"></i>
+                </div>
+                   <div class="profile">A</div>
+               </div>
+           </div>
+        </div>
+        <div id="sidebar" class="sticky-top">
+           <ul>
+               <li class="dash-heading"><i class="mdi mdi-shopping-outline"></i> Dashtar</li>
+               <li><a href="/Pages/Dashboard/dashboard.html"><i class=" me-1 mdi mdi-view-dashboard-outline"></i> Dashboard</a></li>
+               <li class="catelog-dropdown " id="catelog-dropdown"><a class="d-flex flex-row" href="#"><i class=" me-2 mdi mdi-card-search-outline"></i>Catelog <div class=" catelog-down-icon" id="catelog-down-icon"><i class="mdi mdi-chevron-right" ></i></div></a>
+                 <div class="Catelog-ul" id="Catelog-ul">
+                   <ul>
+                   <li class="px-3 py-1 "><a href="product.html">- Products</a></li>
+                   <li class="px-3 py-1 "><a href="/Pages/Dashboard/Catelog-categories/categories.html">- Categories</a></li>
+                   <li class="px-3 py-1 "><a href="/Pages/Dashboard/Catelog-attributes/attributes.html">- Attributes</a></li>
+                 </ul>
+                 </div>
+               </li>
+               <li><a href="#"><i class=" me-2 mdi mdi-account-outline"></i>Customers</a></li>
+               <li><a href="#"><i class=" me-2 mdi mdi-account-group-outline"></i>Our Staff</a></li>
+               <li><a href="#"><i class=" me-2 mdi mdi-cog-outline"></i>Settings</a></li>
+               <li><a href="#"><i class=" me-2 mdi mdi-circle-double"></i>Online Store</a></li>
+                     <li class="catelog-dropdown">
+                       <a class="d-flex flex-row" href="#"><i class="me-2 mdi mdi-web"></i>International
+                           <div class="catelog-down-icon">
+                               <i class="mdi mdi-chevron-right"></i>
+                           </div>
+                       </a>
+                       <div class="Catelog-ul">
+                           <ul>
+                               <li class="px-3 py-1"><a href="#">- Languages</a></li>
+                               <li class="px-3 py-1"><a href="#">- Currencies</a></li>
+                           </ul>
+                       </div>
+                   </li>
+                   <li class="catelog-dropdown">
+                       <a class="d-flex flex-row" href="#"><i class="me-2 mdi mdi-web"></i>Online Store
+                           <div class="catelog-down-icon">
+                               <i class="mdi mdi-chevron-right"></i>
+                           </div>
+                       </a>
+                       <div class="Catelog-ul">
+                           <ul>
+                               <li class="px-3 py-1"><a href="#">- View Store</a></li>
+                               <li class="px-3 py-1"><a href="#">- Store Settings</a></li>
+                           </ul>
+                       </div>
+                   </li>
+                    <button class="btn logout-btn"><i class="mdi mdi-logout"></i> Log Out</button>
+           </ul>
+       </div>
+       </header>
+       <div id="content-wrapper" class="content-wrapper">
+        <div id="productForm"  class=" mt-4">
+         <div class="row ">
+         <div class=" col d-flex justify-content-between darkcolor py-4">
+             <div>
+             <h4 class="headtextcolor">Add Category</h4>
+             <div class="headtextcolor ">Add your category and necessary information from here</div>
+         </div>
+         <a href="/Pages/Dashboard/Catelog-categories/categories.html">
+             <button id="cancelBtn" class="btn btn-cancel text-white me-4">X</button>
+         </a>
+         </div>
+         <div class="col-12 pt-4">
+             <div class="basic-text fs-5 ps-3">Basic info</div>
+             <div class="basic-info-line"></div>
+         </div>
+         <form>
+         <div class="row mt-4 form-row">
+             <div class="row">
+             <div class="col-md-2  ">
+                <label for="categoryName" class="form-label">Category Title/Name</label>  </div>
+             <div class=" col-md-4">
+             <input type="text" class="inputdiv textcolor" id="categoryName" placeholder="Category Title/Name"></div>
+           
+                 <div class="col-md-2 tagpad">
+                     <label for="categoryBarcode" class="form-label">Product Barcode</label></div>
+                     <div class=" col-md-4 ">
+                     <input type="text" class="inputdiv textcolor"  placeholder="Category Barcode">
+                 </div>
+         </div>
+     
+         <div class="row mt-4 ">
+             <div class="col-md-2 d-flex ">
+                 <label for="categoryName" class="form-label">Category Quality</label>  </div>
+                 <div class=" col-md-4">
+                 <input type="number" class="inputdiv textcolor pe-1" value="0"></div>
+                 <div class="col-md-2 tagpad">
+                     <label for="categorySku" class="form-label">Category SKU</label>  </div>
+                     <div class=" col-md-4  ">
+                     <input type="text" class="inputdiv textcolor " placeholder="Category SKU" required aria-label="category SKU"></div>
+             </div>
+         <div class="row mt-4">
+                 <div class="col-md-2 ">
+                 <label for="categoryName" class="form-label">Category Price</label>  </div>
+                 <div class=" col-md-4">
+                 <input type="number" class="inputdiv textcolor " id="categoryPrice" value="0"></div>
+                 <div class="col-md-2 tagpad ">
+                     <label for="categoryName" class="form-label">Sales Price</label>  </div>
+                     <div class=" col-md-4">
+                     <input type="number" class="inputdiv textcolor " value="0"></div>
+                 </div>
+                 <div class="row mt-4">
+                     <div class="col-md-2">
+                         <label for="categoryName" class="form-label">category Slug</label>  </div>
+                         <div class=" col-md-4">
+                         <input type="text" class="inputdiv textcolor" id="categorySku" placeholder="Category Slug"></div>
+                             <div class="col-md-2 tagpad">
+                             <label for="categoryName" class="form-label">category Tagy</label>  </div>
+                             <div class=" col-md-4 ">
+                             <input type="text" class="inputdiv textcolor" placeholder="Category Tagy"></div>
+                     </div>
+                 <div class="row d-flex flex-row">
+                     <div class=" mt-4 col-6 ">
+                     <!-- <button type="submit" class="btn btn-success forn-addbtn bothbtn">Add categoru</button></div> -->
+                     <a href="/Pages/Dashboard/Catelog-categories/categories.html"> <button class="button-add" role="button"> Add Category</button></a>
+                 </div>
+                 <div class="mt-4 col-6">
+                     <button class="button-delete">Delete</button>
+                 </div>       
+         </div>
+         </div>
+         </form>
+     </div>
+     </div>
+ </div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script>
+     document.getElementById("toggle").addEventListener("click", function() {
+       const sidebar = document.getElementById("sidebar");
+       const contentWrapper = document.getElementById("content-wrapper");
+       sidebar.classList.toggle("active");
+       contentWrapper.classList.toggle("active");
+       this.classList.toggle("active");
+   });
+   document.getElementById('themeChange').addEventListener('click', function () {
+    document.body.classList.toggle('light-mode');
+    });
+ </script>
+</body>
+</html>

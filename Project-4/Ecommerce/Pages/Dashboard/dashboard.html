@@ -10,57 +10,71 @@
 </head>
 <body>
     <!-- header  -->
-     <header>
-     <div class="container-fluid">
+     <div class="whole-wrapper">
+     <header class="shadow-sm sticky-top">
+     <div class="container-fluid ">
         <div class="row">
-            <div class="col">
+            <div class="col col-xl-1">
                 <div>
                 <i class="head-icons mdi mdi-menu" id="toggle"></i></div>
             </div>
-            <div class="col-7"></div>
             <div class="col d-flex heading-last">
                 <div>
-                <select name="" id="" class="head-select">
+                <select name="" id="" class="head-select ">
                     <option value="" selected>English</option>
                     <option value="">Hindi</option>
                 </select></div>
-                <i class="head-icons mdi mdi-white-balance-sunny"></i>
-                <i class="head-icons mdi mdi-bell-badge"></i>
+                <div class="modeIcon" id="modeIcon">
+                <i class="head-icons mdi mdi-white-balance-sunny" id="themeChange"></i>
+            </div>
                 <div class="profile">A</div>
             </div>
         </div>
      </div>
+     <!-- side bar -->
      <div id="sidebar" class="sticky-top">
         <ul>
             <li class="dash-heading"><i class="mdi mdi-shopping-outline"></i> Dashtar</li>
-            <li><a href="#"><i class=" me-1 mdi mdi-view-dashboard-outline"></i> Dashboard</a></li>
-            <!-- <li class="catelog-dropdown" id="catelog-dropdown"><a href="#"><i class=" me-2 mdi mdi-card-search-outline"></i>Catelog <i class="mdi mdi-chevron-right catelog-down-icon" id="catelog-down-icon"></i></a> -->
+            <li><a href="/Pages/Dashboard/dashboard.html"><i class=" me-1 mdi mdi-view-dashboard-outline"></i> Dashboard</a></li>
             <li class="catelog-dropdown " id="catelog-dropdown"><a class="d-flex flex-row" href="#"><i class=" me-2 mdi mdi-card-search-outline"></i>Catelog <div class=" catelog-down-icon" id="catelog-down-icon"><i class="mdi mdi-chevron-right" ></i></div></a>
               <div class="Catelog-ul" id="Catelog-ul">
                 <ul>
-                <li class="px-3 py-1 "><a href="">- Products</a></li>
-                <li class="px-3 py-1 "><a href="">- Categories</a></li>
-                <li class="px-3 py-1 "><a href="">- Attributes</a></li>
+                <li class="px-3 py-1 "><a href="/Pages/Dashboard/Catelogs-product/product.html">- Products</a></li>
+                <li class="px-3 py-1 "><a href="/Pages/Dashboard/Catelogs-product/product.html">- Categories</a></li>
+                <li class="px-3 py-1 "><a href="/Pages/Dashboard/Catelog-attributes/attributes.html">- Attributes</a></li>
               </ul>
               </div>
             </li>
             <li><a href="#"><i class=" me-2 mdi mdi-account-outline"></i>Customers</a></li>
             <li><a href="#"><i class=" me-2 mdi mdi-account-group-outline"></i>Our Staff</a></li>
-            <!-- <li><a href="#"><i class=" me-2 mdi mdi-monitor-dashboard"></i>Pages</a></li> -->
             <li><a href="#"><i class=" me-2 mdi mdi-cog-outline"></i>Settings</a></li>
             <li><a href="#"><i class=" me-2 mdi mdi-circle-double"></i>Online Store</a></li>
-            <!-- <li class="catelog-dropdown" id="catelog-dropdown"><a href="#"><i class=" me-2 mdi mdi-web"></i>International<i class="mdi mdi-chevron-right catelog-down-icon"></i></a>
-                <ul class="Catelog-ul" id="Catelog-ul">
-                    <li class="px-3 py-1"><a href="">-Products</a></li>
-                    <li class="px-3 py-1"><a href="">-Products</a></li>
-                 </ul></li> -->
-                 <!-- <li class="catelog-dropdown" id="catelog-dropdown"><a href="#"><i class=" me-2 mdi mdi-card-search-outline"></i>Catelog <i class="mdi mdi-chevron-right catelog-down-icon"></i></a>
-                    <ul class="Catelog-ul" id="Catelog-ul">
-                      <li class="px-3 py-1"><a href="">-Products</a></li>
-                      <li class="px-3 py-1"><a href="">-Products</a></li>
-                      <li class="px-3 py-1"><a href="">-Products</a></li>
-                    </ul>
-                  </li> -->
+                  <li class="catelog-dropdown">
+                    <a class="d-flex flex-row" href="#"><i class="me-2 mdi mdi-web"></i>International
+                        <div class="catelog-down-icon">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </div>
+                    </a>
+                    <div class="Catelog-ul">
+                        <ul>
+                            <li class="px-3 py-1"><a href="#">- Languages</a></li>
+                            <li class="px-3 py-1"><a href="#">- Currencies</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="catelog-dropdown">
+                    <a class="d-flex flex-row" href="#"><i class="me-2 mdi mdi-web"></i>Pages
+                        <div class="catelog-down-icon">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </div>
+                    </a>
+                    <div class="Catelog-ul">
+                        <ul>
+                            <li class="px-3 py-1"><a href="#">- 404</a></li>
+                            <li class="px-3 py-1"><a href="#">- Store Settings</a></li>
+                        </ul>
+                    </div>
+                </li>
                  <button class="btn logout-btn"><i class="mdi mdi-logout"></i> Log Out</button>
         </ul>
     </div>
@@ -68,159 +82,141 @@
     <!-- section 1  -->
      <div id="content-wrapper">
      <section class="container-fluid">
-        <div class="row section-1" id="whole-body">
-            <h4 class="fw-medium ps-3 pb-2 pt-4 text-white fs-5">DashBoard Overview</h4>
-            <div class="col d-flex ">
-                <div class="box-1 box-color-green">
-                    <div class="icon-div">
-                        <img src="/Icons/overview-1.svg" alt="">
-                 
-                        <!-- <div class="fs-5 mt-2">Today Order</div> -->
-                        <div class="fw-semibold fs-4 mt-3 mb-2">₹0.00</div>
-                        <div class="money-ways d-flex mt-3">
-                            <div class="fs-6 fw-medium">Cash : ₹0.00 </div>
-                            <div class="fs-6 fw-medium"> Card : ₹0.00</div>
-                            <div class="fs-6 fw-medium"> Cradit : ₹0.00</div>
-                        </div>
+        <div class="row">
+            <div class="section-1" id="whole-body">
+            <h4 class="fw-medium ps-3 fs-5">DashBoard Overview</h4>
+            <!-- row-1 4box -->
+            <div class="row d-flex ">
+                <div class="col-xl-3 col-lg-3 col-xxl-3 col-sm-3 col-md-3 col-6">
+                    <div class="box-1 box-color-green">
+                        <img class="pt-3" src="/Icons/overview-1.svg" alt="">            
+                        <div class="fw-semibold fs-4 pt-2 pb-2">₹0.00</div>
+                        <div class="px-3 box-1-text">Secure Your Cash with Confidence Your Money</div>
+                        <div class="px-2 box-1-text-2"> Safely Stored</div>
+                        <div class="box-1-text-3">Cash: ₹00:00</div>
                     </div>
                 </div>
-                <div class="box-1 ms-3 orange-color">
-                    <div class="icon-div">
-                        <img src="/Icons/overview-1.svg" alt="">
-                        <!-- <div class="fs-5 mt-2">Today Order</div> -->
-                        <div class="fw-semibold fs-4 mt-3 mb-2">₹0.00</div>
-                        <div class="money-ways d-flex mt-3">
-                            <div class="fs-6 fw-medium">Cash : ₹0.00 </div>
-                            <div class="fs-6 fw-medium"> Card : ₹0.00</div>
-                            <div class="fs-6 fw-medium"> Cradit : ₹0.00</div>
-                        </div>
+                <div class=" col-xl-3 col-lg-3 col-xxl-3 col-sm-3 col-md-3 col-6">
+                    <div class="box-1 orange-color">
+                        <img class="pt-3" src="/Icons/overview-1.svg" alt="">
+                        <div class="fw-semibold fs-4 pt-2 pb-2">₹0.00</div>
+                        <div class="px-3 box-1-text">Secure Your Cash with Confidence Your Money</div>
+                        <div class="px-2 box-1-text-2"> Safely Stored</div>
+                        <div class="box-1-text-3">Cash: ₹00:00</div>
                     </div>
                 </div>
-                <div class="box-1 ms-3 blue-color">
-                    <div class="icon-div">
-                        <img src="/Icons/overview-2.svg" alt="">
-                 
-                        <!-- <div class="fs-5 mt-2">Today Order</div> -->
-                        <div class="fw-semibold fs-4 mt-3 mb-2">₹0.00</div>
-                        <div class="money-ways d-flex mt-3">
-                            <div class="fs-6 fw-medium">Cash : ₹0.00 </div>
-                            <div class="fs-6 fw-medium"> Card : ₹0.00</div>
-                            <div class="fs-6 fw-medium"> Cradit : ₹0.00</div>
-                        </div>
+                <div class="col-xl-3 col-lg-3 col-xxl-3 col-sm-3 col-md-3 col-6">
+                    <div class="box-1 blue-color">
+                        <img class="pt-3" src="/Icons/overview-2.svg" alt="">
+                        <div class="fw-semibold fs-4 pt-2 pb-2">₹0.00</div>
+                        <div class="px-3 box-1-text">Secure Your Cash with Confidence Your Money</div>
+                        <div class="px-2 box-1-text-2"> Safely Stored</div>
+                        <div class="box-1-text-3">Cash: ₹00:00</div>
                     </div>
                 </div>
-                <div class="box-1 ms-3 darkblue-color">
-                    <div class="icon-div">
-                        <img src="/Icons/overview-3.svg" alt="">
-                        <!-- <div class="fs-5 mt-2">Today Order</div> -->
-                        <div class="fw-semibold fs-4 mt-3 mb-2">₹0.00</div>
-                        <div class="money-ways d-flex mt-3">
-                            <div class="fs-6 fw-medium">Cash : ₹0.00 </div>
-                            <div class="fs-6 fw-medium"> Card : ₹0.00</div>
-                            <div class="fs-6 fw-medium"> Cradit : ₹0.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-1 ms-3 box-color-green">
-                    <div class="icon-div">
-                        <img src="/Icons/overview-3.svg" alt="">
-                        <!-- <div class="fs-5 mt-2">Today Order</div> -->
-                        <div class="fw-semibold fs-4 mt-3 mb-2">₹0.00</div>
-                        <div class="money-ways d-flex mt-3">
-                            <div class="fs-6 fw-medium">Cash : ₹0.00 </div>
-                            <div class="fs-6 fw-medium"> Card : ₹0.00</div>
-                            <div class="fs-6 fw-medium"> Cradit : ₹0.00</div>
-                        </div>
+                <div class="col-xl-3  col-lg-3 col-xxl-3 col-sm-3 col-md-3 col-6">
+                    <div class="box-1 darkblue-color">
+                        <img class="pt-3" src="/Icons/overview-3.svg" alt="">       
+                        <div class="fw-semibold fs-4 pt-2 pb-2">₹0.00</div>
+                        <div class="px-3 box-1-text">Secure Your Cash with Confidence Your Money</div>
+                        <div class="px-2 box-1-text-2"> Safely Stored</div>
+                        <div class="box-1-text-3">Cash: ₹00:00</div>
                     </div>
                 </div>
             </div>
-            <div class="col mt-5 d-flex">
-                <div class="box-2 gray-color">
-                    <div class="icon-div-2 d-flex">
+            <!-- row-2 4 box-->
+            <div class="row mt-2 d-flex">
+                <div class="col-6 col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="box-2 gray-color d-flex">
                         <div class="img-div orange-color">
                         <img src="/Icons/overview-5.svg" alt=""></div>
                         <div class="box-2-text">
                         <div>Total Order</div>
-                        <div class="fw-bold fs-4">242</div>
+                        <div class="fw-bold  num-text">242</div>
+                        <div class=" num-2-text">Lorem ipsum dolor sit.</div>
                     </div>
                 </div>
                 </div>
-                <div class="box-2 ms-4 gray-color">
-                    <div class="icon-div-2 d-flex">
+                <div class="col-6 col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                    <div class="box-2 gray-color d-flex">
                         <div class="img-div blue-color">
-                        <img class="ps-3" src="/Icons/overview-5.svg" alt=""></div>
+                        <img class="" src="/Icons/overview-5.svg" alt=""></div>
                         <div class="box-2-text">
-                        <div>Orders Pending <span class="text-danger">(358)</span></div>
-                        <div class="fw-bold fs-4">63</div></div>
+                        <div>Orders Pending <span class=" red-highlight-text ">(358)</span></div>
+                        <div class="fw-bold  num-text">63</div>
+                        <div class=" num-2-text">Lorem ipsum dolor sit.</div>
+                    </div>
                     </div>
                 </div>
-                <div class="box-2 ms-4 gray-color">
-                    <div class="icon-div-2 d-flex">
+                <div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xl-3">
+                    <div class="box-2 gray-color d-flex">
                         <div class="img-div darkblue-color">
-                        <img class="ps-3" src="/Icons/overview-4.svg" alt=""></div>
+                        <img class="" src="/Icons/overview-4.svg" alt=""></div>
                         <div class="box-2-text">
                         <div>Orders Processing</div>
-                        <div class="fw-bold fs-4">30</div>
+                        <div class="fw-bold num-text">30</div>
+                        <div class=" num-2-text">Lorem ipsum dolor sit.</div>
                     </div>
                     </div>
                 </div>
-                <div class="box-2 ms-4 gray-color">
-                    <div class="icon-div-2 d-flex">
+                <div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xl-3">
+                    <div class="box-2  gray-color d-flex">
                         <div class="img-div darkgreen-color">
-                        <img class="ps-3" src="/Icons/overview-6.svg" alt=""></div>
+                        <img class="" src="/Icons/overview-6.svg" alt=""></div>
                         <div class="box-2-text">
                         <div>Orders Delivered</div>
-                        <div class="fw-bold fs-4">119</div>
+                        <div class="fw-bold num-text">119</div>
+                        <div class=" num-2-text">Lorem ipsum dolor sit.</div>
                     </div>
                     </div>
                 </div>
             </div>
-            <div class="col mt-5 d-flex">
-                <div class="box-3 light-gray-color">
-                    <div class="text-light ms-4 fs-5 pt-4">Weekly Sales</div>
-                    <div class="box-3-div">
-                    <div class="box-3-img">
+            <!-- row-3  box-2 of graph pic  -->
+            <div class="row mt-4 d-flex flex-row g-3">
+                <div class="col-12 col-lg-6 col-sm-12 col-md-6 graph-div ">
+                    <div class="light-gray-color px-3 py-2 rounded-3">
+                    <div class="text-light fs-5 pt-4 ps-5">Weekly Sales</div>
+                    <div class="box-3-img pe-3">
                         <img src="/Icons/graph.png" alt="">
                     </div>
-
                 </div>
                 </div>
-                <div class="box-3 light-gray-color ms-5 text-center">
-                    <div class="text-light ms-4 fs-5 pt-4">Weekly Sales</div>
-                    <div class="box-3-div">
-                    <div class="box-3-img">
+                <div class="col-12 col-lg-6 col-sm-12 col-md-6 graph-div ">
+                    <div class="light-gray-color px-3 pt-1 pb-4 text-center rounded-3">
+                    <div class="text-light  fs-5 pt-4">Weekly Sales</div>
+                    <div class="box-32-img pe-5">
                         <img src="/Icons/piachart-1.png" alt="">
                     </div>
-
-                </div>
                 </div>
             </div>
+            </div>
+            <!-- table  -->
             <div class="col">
-                <div class=" table-container ">
-                <h2 class="text-white mb-4 fs-5 ms-1">Recent Order</h2>
-                <table class="table table-dark ">
-                    <thead >
+                <div class="table-container">
+                <h2 class=" mb-4 fs-5 ms-1 ps-1">Recent Order</h2>
+                <table class="table table-dark align-middle">
+                    <thead class="text-start">
                         <tr>
-                            <th>INVOICE NO</th>
-                            <th>ORDER TIME</th>
-                            <th>CUSTOMER NAME</th>
-                            <th>METHOD</th>
-                            <th>AMOUNT</th>
-                            <th>STATUS</th>
-                            <th>ACTION</th>
-                            <th>INVOICE</th>
+                            <th class="bg-success ps-4">INVOICE NO</th>
+                            <th class="bg-success">ORDER TIME</th>
+                            <th class="bg-success">CUSTOMER NAME</th>
+                            <th class="bg-success">METHOD</th>
+                            <th class="bg-success">AMOUNT</th>
+                            <th class="bg-success">STATUS</th>
+                            <th class="bg-success">ACTION</th>
+                            <th class="bg-success">INVOICE</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-start">
                         <tr>
-                            <td>11245</td>
+                            <td class="ps-4">11245</td>
                             <td>21 Aug, 2024 8:33 PM</td>
                             <td>mohamed farag</td>
                             <td>Cash</td>
                             <td>&#8377;461.01</td>
                             <td><span class="badge badge-delivered">Delivered</span></td>
                             <td>
-                                <select class="form-select bg-dark text-white">
+                                <select class="form-select table-select">
                                     <option selected>Delivered</option>
                                     <option value="1">Processing</option>
                                     <option value="2">Pending</option>
@@ -231,14 +227,14 @@
                                 <i class="mdi mdi-magnify-plus-outline printer-icon"></i></td>
                         </tr>
                         <tr>
-                            <td>11228</td>
+                            <td class="ps-4">11228</td>
                             <td>21 Aug, 2024 2:29 PM</td>
                             <td>Ram saai</td>
                             <td>Card</td>
                             <td>&#8377;158.03</td>
                             <td><span class="badge badge-processing">Processing</span></td>
                             <td>
-                                <select class="form-select bg-dark text-white">
+                                <select class="form-select table-select">
                                     <option value="0">Delivered</option>
                                     <option selected>Processing</option>
                                     <option value="2">Pending</option>
@@ -250,14 +246,14 @@
                             </td>
                         </tr>
                         <tr >
-                            <td>11228</td>
+                            <td class="ps-4">11228</td>
                             <td>21 Aug, 2024 2:29 PM</td>
                             <td>khanh Khanh</td>
                             <td>Card</td>
                             <td>&#8377;158.03</td>
                             <td><span class="badge badge-processing">Processing</span></td>
                             <td>
-                                <select class="form-select bg-dark text-white">
+                                <select class="form-select table-select">
                                     <option value="0">Delivered</option>
                                     <option selected>Processing</option>
                                     <option value="2">Pending</option>
@@ -269,14 +265,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>11228</td>
+                            <td class="ps-4">11228</td>
                             <td>21 Aug, 2024 2:29 PM</td>
                             <td>Sumit Patel</td>
                             <td>Card</td>
                             <td>&#8377;158.03</td>
                             <td><span class="badge badge-processing">Processing</span></td>
                             <td>
-                                <select class="form-select bg-dark text-white">
+                                <select class="form-select table-select">
                                     <option value="0">Delivered</option>
                                     <option selected>Processing</option>
                                     <option value="2">Pending</option>
@@ -289,17 +285,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <!-- <nav aria-label="Page navigation">
-                    <ul class="pagination justify-content-end">
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item"><a class="page-link" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">31</a></li>
-                    </ul>
-                </nav> -->
                 <nav aria-label="" class="container-fluid pagination-body ">
                     <ul class="pagination justify-content-end">
                       <li class="page-item disabled">
@@ -319,9 +304,13 @@
                       </li>
                     </ul>
                   </nav>
-            </div></div>
+            </div>
+        </div>
+          </div>
+        </div>
      </section>
     </div>
+</div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
  <script>
          document.getElementById("toggle").addEventListener("click", function() {
@@ -331,13 +320,18 @@
             contentWrapper.classList.toggle("active");
             this.classList.toggle("active");
         });
-        document.getElementById("catelog-dropdown").addEventListener("click", function () {
-       var catelogUl = document.getElementById('Catelog-ul');
-       catelogUl.classList.toggle('active');
-    //    const dropdown=document.getElementsByClassName("catelog-down-icon")
-    //    dropdown.classList.toggle("active")
-    this.querySelector('.catelog-down-icon').classList.toggle('active');
-});
+          document.querySelectorAll('.catelog-dropdown').forEach(function(dropdown) {
+            dropdown.addEventListener('click', function() {
+                this.querySelector('.Catelog-ul').classList.toggle('active');
+                let icon = this.querySelector('.catelog-down-icon i');
+                icon.classList.toggle('mdi-chevron-right');
+                icon.classList.toggle('mdi-chevron-down');
+            });
+        });
+        document.getElementById("themeChange").addEventListener("click",function(){
+            var element=document.body;
+            element.classList.toggle("light-mode");
+        });
  </script>
 </body>
 </html>
