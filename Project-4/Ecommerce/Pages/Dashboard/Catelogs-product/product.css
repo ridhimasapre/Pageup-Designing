@@ -20,6 +20,9 @@
     --bulkSide-color:#71757a;
     --checkbox-bg:black;
     --checkbox-tick-color:white;
+    --table-bg-color:#1b2430;
+    --tableselect-bg:#364050;
+    --tableselect-color:white;
 }
 /* Light Mode */
 .light-mode {
@@ -44,6 +47,9 @@
     --bulkSide-color:#71757a;
     --checkbox-bg:rgb(235, 228, 228);
     --checkbox-tick-color:#28a745;
+    --table-bg-color:white;
+    --tableselect-bg:white;
+    --tableselect-color:black;
 }
 body{
     margin: 0px;
@@ -106,6 +112,7 @@ header{
     transition: left 0.5s ease;
     transition-delay: 0.01s;
     position: relative;
+    padding-left: 15px;
 }
 #toggle.active{
     left: 15rem;
@@ -313,7 +320,7 @@ color: white;
 .textcolor{
     color:lightgray;
 }
- .textarea{
+.textarea{
     width: 100%;
     border-radius: 10px;
     background: transparent;
@@ -328,7 +335,25 @@ color: white;
     width: 100%;
     height: 3rem;
 }
-.form-select:focus {
+.form-select {
+    border: 1px solid gray;
+    box-shadow: none;
+    background: var(--tableselect-bg) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="white" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>') no-repeat right 10px center;
+    background-color: var(--tableselect-bg); 
+    color: var(--tableselect-color); 
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; 
+    overflow-x: hidden;
+    border-radius: 10px; 
+    padding-left:15px;
+    height: 47px;
+    width: 100%;
+    margin: 4px 4px;
+    font-size: 16px; 
+}
+.form-select:focus{
     border: 1px solid gray;
     box-shadow: none;
 }
@@ -340,12 +365,13 @@ color: white;
     padding-right: 5px;
 
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.input-box , .form-select{
+.input-box {
     overflow-x: hidden;
     background: #364050;
     color: lightgray;
@@ -435,7 +461,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     display: inline-flex; 
     height: 48px;
-    /* width: 100%; */
+    width: 100%;
     justify-content: center;
     line-height: 1;
     list-style: none;
@@ -479,7 +505,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     display: inline-flex; 
     height: 48px;
-    /* width: 100%; */
+    width: 100%;
     justify-content: center;
     line-height: 1;
     list-style: none;
@@ -685,7 +711,10 @@ input::-webkit-inner-spin-button {
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
   }
-  
+  .iconsOnly{
+ padding-top: 1rem;
+    display: none;
+  }
   .button-expo:active {
     box-shadow: none;
     transform: translateY(0);
@@ -726,12 +755,42 @@ input::-webkit-inner-spin-button {
   .textWithIcon{
     display: flex; 
   }
-
+  .impoexpoicon{
+    display: none;
+  }
+  .impoexpowithText{
+    display: flex;
+    flex-direction: row;
+  }
+  #search-icon{
+    display: none;
+  }
+  .btns-div{
+    display: none;
+  }
   /* responsioveness  */
   @media (max-width:320px) and (min-width:200px){
     .button-expo{
         height: 3rem;
     }
+    .impoexpoicon{
+    display: flex;
+    font-size: 25px;
+    padding: 3px;
+    padding-left: 0px;
+  }
+  .import-icon{
+    rotate: 180deg;
+  }
+  .export-icon{
+    padding-top: 4px;
+  }
+  .bgOfRow{
+    padding: 15px;
+  }
+  .impoexpowithText{
+    display: none;
+  }
     .heading-last{
         visibility: hidden;
     }
@@ -740,17 +799,82 @@ input::-webkit-inner-spin-button {
         display: block;
         overflow-x: auto;
     }
+    .table-div{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  .iconsOnly{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    padding-top: 2px;
   }
-  .iconsOnly {
+  .textWithIcon{
+    display: none; 
+  }
+   header {
+    height: 50px;
+    padding-left: 0px;
+    padding-top: 5px;
+  }
+  .table-container{
+    font-size: 13px;
+}
+.custom-checkbox .checkmark {
+    height: 12px;
+    width: 12px;
+}
+.custom-checkbox input:checked + .checkmark::after {
+    display: block;
+    left: 4px;
+    width: 4px;
+    height: 6px;
+    border: solid var(--checkbox-tick-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .dropdown-container-1{
+    padding-left: 12px;
+    padding-right: 0px;
+}
+.dropdown-container{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.dropdown-container{
     display: none;
-    padding-top: 1rem;
-   }
+  }
+  .dropdown-container-1{
+    padding: 0px;
+    padding-right: 8px;
+  }
+  .input-b{
+    padding: 0px;
+  }
+  .two-btn{
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 5px;
+  }
+  .three-btns{
+    padding: 0px;
+}
+#search-icon{
+  display: flex;
+  font-size: 23px;
+  justify-content: end;
+  padding-top: 5px;
+}
+header{
+  padding-right: 8px;
+}
+} 
 @media (max-width:767px) and (min-width:321px){
     /* phone sm */
     .three-btns{
         display: flex;
         flex-direction: column;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
     }
     .twobtns{
         width: 100%;
@@ -762,9 +886,6 @@ input::-webkit-inner-spin-button {
     .heading-last{
         visibility: hidden;
     }
-    /* .btnsdiv{
-        gap: 2px;
-    } */
     #content-wrapper {
         transition: margin-left 0.6s;
         margin-left: 0;
@@ -774,18 +895,14 @@ input::-webkit-inner-spin-button {
         /* margin-left: 250px; */
         visibility: hidden;
         padding: 1rem;
-    }
-    .section-1{
-        padding-left: 22px;
-        padding-right: 0px;
-    }
+     }
     #toggle{
         left: 0;
         margin-left: 3px;
         transition: left 0.5s ease;
         transition-delay: 0.01s;
         position: relative;
-        padding: 0px;
+        /* padding: 10px; */
     }
     #toggle.active{
         left: 14rem;
@@ -821,25 +938,106 @@ input::-webkit-inner-spin-button {
         text-align: left;
     }
     table .table-div {
-        /* margin: 10xp 20px; */
         padding-left: 10rem;
     }
     .heading-last{
         justify-content: end;
         }
-        .section-1 {
+    .section-1 {
             padding-top: 0px;
             margin-top: 0px;
             font-style: 46px;
         }
-        .button-expo{
+    .button-expo{
             height: 3rem;
         }
+    .iconsOnly{
+            display: flex;
+            padding-top: 0px;
+          }
+    .textWithIcon{
+            display: none; 
+          }
+          .table-container{
+            font-size: 14px;
+        }
+    .custom-checkbox .checkmark {
+            height: 12px;
+            width: 12px;
+        }
+    .custom-checkbox input:checked + .checkmark::after {
+            display: block;
+            left: 4px;
+            width: 4px;
+            height: 6px;
+            border: solid var(--checkbox-tick-color);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+    }
+    .impoexpoicon{
+        display: flex;
+        padding-left: 10px;
+        gap: 0px;
+      }
+      .import-icon{
+        rotate: 180deg;
+        font-size: 30px;
+      }
+      .export-icon{
+        font-size: 30px;
+        /* padding-left: 6px; */
+      }
+      .bgOfRow{
+        padding: 10px;
+      }
+      .impoexpowithText{
+        display: none;
+      }
+      .dropdown-container{
+        display: none;
+      }
+      .dropdown-container-1{
+        padding: 0px;
+        padding-right: 5px;
+      }
+      .input-b{
+        padding: 0px;
+      }
+      .two-btn{
+        /* padding: 0px; */
+        padding-left: 5px;
+        padding-right: 0px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        gap:10px;
+      }
+      .three-btns{
+        padding: 0px;
+    }
+    #search-icon{
+        display: inline-block;
+        font-size: 23px;
+        padding-top: 5px;
+        /* padding-left: 80px; */
+      }
+  .btns-div{
+    display: none;
+  }
+    #search-icon{
+      display: flex;
+      font-size: 23px;
+      justify-content: end;
+      padding-top: 5px;
+    }
+    header{
+      padding-left: 0px;
+      padding-right: 15px;
+    }
     }
 @media (max-width:992px) and (min-width:768px){
     /* medium md */
     .heading-last{
-     margin-left:0px;
+      display: flex;
         justify-content: end;
     }
      table {
@@ -850,37 +1048,49 @@ input::-webkit-inner-spin-button {
     th, td {
     padding: 0px;
     }
-         
     .table-div{
         padding-left: 10px;
         padding-right: 10px;
     }
-     .section-1{
-     padding-left: 20px;
-     padding-right: 0px;
-     }
+    header {
+        height: 60px;
+        padding-left: 0px;
+        padding-top: 7px;
+    }
+    .searchDiv{
+      display: none;
+    }
  }
 @media (max-width:1200px) and (min-width:993px){
     /* Large lg*/
     .heading-last{
-    margin-left: 0px;
-    }
-    .heading-last{
         justify-content: end;
-        }
-        table {
+    }
+    table {
             width: 100%;
             /* display: block; */
-        }
-        th, td {
+    }
+    th, td {
             padding: 14px;
             text-align: center;
-        }
-            .table-div
+    }
+    .table-div
             {
                 padding-left: 1rem;
                 padding-right: 40px;
-            }
+    }
+    header {
+      height: 60px;
+      padding-left: 0px;
+      padding-top: 7px;
+    }
+    .searchDiv{
+      display: none;
+    }
+    .heading-last{
+      display: flex;
+      justify-content: end;
+    }
  }
 @media (max-width:1448px) and (min-width:1201px){
     /* extra large  xl*/
@@ -894,9 +1104,21 @@ input::-webkit-inner-spin-button {
         .table-div
         {
             padding-left: 1rem;
-            padding-right: 50px;
+            padding-right: 20px;
         }
-      
+        header {
+            height: 60px;
+            padding-left: 0px;
+            padding-top: 7px;
+          }
+          .heading-last{
+            display: flex;
+            justify-content: end;
+          }
+          .searchDiv{
+            display: none;
+          }
+        
   }
 @media (min-width:1449px) and (max-width:2660px){
   
@@ -904,4 +1126,16 @@ input::-webkit-inner-spin-button {
         padding-left: 2rem;
         padding-right: 40px;
     }
+    header {
+        height: 60px;
+        padding-left: 0px;
+        padding-top: 5px;
+      }
+      .heading-last{
+        display: flex;
+        justify-content: end;
+      }
+      .searchDiv{
+        display: none;
+      }
 }

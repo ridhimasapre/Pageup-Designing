@@ -380,15 +380,19 @@ tbody{
 .num-text{
     font-size: 20px;
 }
+.imgForSm{display: none;}
 @media (max-width:320px) and (min-width:198px){
     .box-1-text-2{
         display: none;
      }
      .box-2-text{
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .table-container{
+        font-size: 13px;
     }
     .num-text{
-        font-size: 12px;
+        font-size: 14px;
     }
      .box-1-text-3{
         display: none;
@@ -401,19 +405,15 @@ tbody{
     }
     .box-2{
         margin-top: 1rem;
+        padding: 5px;
     }
-    /* .img-div{
-        margin-top: 11px;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        }
-        .img-div img{
-            width: 23px;
-            height: 23px;
-            padding-top: 0px;
-            padding-left: 0px;
-        } */
+    .imgForSm{
+    display: block;
+    width: 10px;
+    }
+    .img-div{
+        display: none;
+    }
     .heading-last{
         visibility: hidden;
     }
@@ -455,6 +455,18 @@ tbody{
         margin-left: 0;
         /* padding: 1rem; */
         padding: 0px;
+    }
+    .img-div{
+        display: none;
+    }
+    .box-2-text{
+        font-size: 15px;
+    }
+    .table-container{
+        font-size: 13px;
+    }
+    .num-text{
+        font-size: 15px;
     }
     #content-wrapper.active {
         visibility: hidden;
@@ -513,6 +525,7 @@ tbody{
     .box-2{
         margin-top: 1rem;
         width: 100%;
+        padding: 5px;
     }
     .graph-div{
         width: 100%;
@@ -526,6 +539,9 @@ tbody{
      .box-2-text{
         font-size: 15px;
      }
+    .pagination-body{
+        padding-right: 0px;
+    }
 }
 @media (max-width:992px) and (min-width:768px){
     .heading-last{
@@ -554,7 +570,7 @@ tbody{
          .box-1{
             margin-top: 1rem;
         }
-        }
+}
 @media (max-width:1200px) and (min-width:993px){
      .red-highlight-text {
         display: none;

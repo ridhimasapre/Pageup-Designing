@@ -324,7 +324,8 @@ color: white;
     color: white;
 }
 .add-icon{
-    padding-right: 5px;
+    padding-right: 5px;   
+    font-size: 20px;
 }
 .input-box{
     overflow: hidden;
@@ -448,7 +449,6 @@ color: white;
         height: 3rem;
     }
   .iconsOnly{
-    /* width: 100%; */
     display: flex;
     justify-content: start;
   }
@@ -490,9 +490,6 @@ header{
     padding-right: 20px;
     /* padding: 2rem 2rem; */
 }
-/* .section-1{ */
-    /* padding-right: 5px; */
-/* } */
 #content-wrapper {
     transition: margin-left 0.6s;
     margin-left: 0;
@@ -502,6 +499,23 @@ header{
     visibility: hidden;
     padding: 1rem;
 }
+.table-container{
+    font-size: 13px;
+}
+.custom-checkbox .checkmark {
+    height: 12px;
+    width: 12px;
+}
+.custom-checkbox input:checked + .checkmark::after {
+    display: block;
+    left: 4px;
+    /* top: 2px; */
+    width: 4px;
+    height: 6px;
+    border: solid var(--checkbox-tick-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
   }
 @media (max-width:767px) and (min-width:321px){
     .three-btns{
@@ -509,14 +523,11 @@ header{
         flex-direction: column;
         margin-top: 1rem;
     }
-    .add-btn{
-        width: 100%;
-        font-size: 16px;
-    }
     .twobtns{
         width: 100%;
         gap: 1rem;
     }
+    
     header{
         padding-left: 10px;
     } 
@@ -535,10 +546,6 @@ header{
         visibility: hidden;
         padding: 1rem;
     }
-    /* .section-1{ */
-        /* padding-left: 22px; */
-        /* padding-right: 0px; */
-    /* } */
     #toggle{
         left: 0;
         margin-left: 3px;
@@ -603,21 +610,35 @@ header{
         .imp-expo-buttons{
             gap: 5px;
         }
-        .filter-btn{
-            font-size: 16px;
-            /* padding-top: 8px; */
-        }
-        .reset-btn{
-            font-size: 16px;
-        }
-        /* .section-1 {
-            padding-top: 0px;
-            margin-top: 0px;
-            font-style: 46px;
-        } */
         .button-expo{
             height: 3rem;
         }
+        .iconsOnly{
+            /* width: 100%; */
+            display: flex;
+            justify-content: start;
+          }
+          .textWithIcon{
+            display: none; 
+          }
+          .table-container{
+            font-size: 14px;
+        }
+        .custom-checkbox .checkmark {
+            height: 12px;
+            width: 12px;
+        }
+        .custom-checkbox input:checked + .checkmark::after {
+            display: block;
+            left: 4px;
+            /* top: 2px; */
+            width: 4px;
+            height: 6px;
+            border: solid var(--checkbox-tick-color);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+          
     }
 @media (max-width:992px) and (min-width:768px){
     /* medium md */
